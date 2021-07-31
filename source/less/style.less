@@ -1,4 +1,6 @@
 @import (less) "./global/normalize.css";
+@import "./global/fonts.less";
+@import "./global/global.less";
 @import "./global/variables.less";
 @import "./blocks/main-nav.less";
 @import "./blocks/page-header.less";
@@ -9,28 +11,9 @@
 @import "./blocks/partnership.less";
 @import "./blocks/map.less";
 @import "./blocks/page-footer__wrapper.less";
-
-
-body {
-    background-color: @bg-color;
-    font-family: @main-font;
-    color: @color-black_dark;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    margin: 0 20px;
-    width: 320px;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+@import "./blocks/page.less";
+@import "./blocks/page-footer__wrapper.less";
+@import "./blocks/product-catalog.less";
+@import "./blocks/product-catalog__more.less";
+@import "./blocks/extra-goods.less";
+@import "./blocks/program-form.less";
