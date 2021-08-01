@@ -27,77 +27,107 @@
                     <fieldset class="form-fieldset">
                         <div class="program__cat-info">
                             <p>
-                                <label class="form-label">Имя:<sup>*</sup></label>
+                                <label class="form-label">
+                                    <div class="input__text-contact">Имя:<sup>*</sup></div>
+                                </label>
                                 <input class="form-input" type="text" name="first-name" value="Барсик" required>
                             </p>
                             <p>
-                                <label class="form-label">Вес (кг):<sup>*</sup></label>
+                                <label class="form-label">
+                                    <div class="input__text-contact">Вес (кг):<sup>*</sup></div>
+                                </label>
                                 <input class="form-input form-input_weight" type="text" name="weight" value="7"
                                     required>
                             </p>
                             <p>
-                                <label class="form-label">Возраст (лет):</label>
+                                <label class="form-label">
+                                    <div class="input__text-contact">Возраст (лет):</div>
+                                </label>
                                 <input class="form-input form-input_age" type="text" name="age" value="7">
                             </p>
                         </div>
                         <div class="program__shape">
-                            <p>
-                            <h2 class="visually-hidden">Желаемый результат</h2>
-                            <label class="form-label">
-                                <input class="radio-input" type="radio" name="slimming" value="slim" checked>Похудение
-                            </label>
-                            <label class="form-label">
-                                <input type="radio" name="weight-gain" value="weight">
-                                Набор массы
-                            </label>
-                            <label class="form-label">
-                                <input class="radio-input" type="radio" name="unknown" value="advice">
-                                Не знаю (нужен ваш совет)
-                            </label>
-                            </p>
-                            <p>
-                            <h2 class="form-info__title">Контактные данные
+                            <div class="radio-wrapper">
+                                <p>
+                                <h2 class="visually-hidden">Желаемый результат</h2>
+                                <label class="form-label">
+                                    <input class="radio-input" type="radio" name="slimming" value="slim" checked
+                                        disabled>
+                                    <div class="input__text">Похудение</div>
+                                </label>
+                                </p>
+                                <p>
+                                    <label class="form-label">
+                                        <input class="radio-input" type="radio" name="weight-gain" value="weight">
+                                        <div class="input__text">Набор массы</div>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label class="form-label">
+                                        <input class="radio-input" type="radio" name="unknown" value="advice">
+                                        <div class="input__text">Не знаю (нужен ваш совет)</div>
+                                    </label>
+                                </p>
+                            </div>
+                            <p class="form-info__line">
+                            <h2 class="form-info__title form-info__title--contact">Контактные данные
                                 (владельца кота)</h2>
                             <p>
-                                <label class="form-label">Email:<sup>*</sup></label>
+                                <label class="form-label">
+                                    <div class="input__text-contact">E-mail:<sup>*</sup></div>
+                                </label>
                                 <input class="form-input form-input__email" type="email" name="email"
                                     value="kuklachev@gmail.com" required>
                             </p>
                             <p>
-                                <label class="form-label">Телефон:<sup>*</sup></label>
+                                <label class="form-label">
+                                    <div class="input__text-contact">Телефон:<sup>*</sup></div>
+                                </label>
                                 <input class="form-input form-input__phone" type="tel" name="phone"
                                     value="8 (960) 900-60-90" required>
                             </p>
                             </p>
-                            <p>
-                            <h2 class=" form-info__title form-info">Комментарий</h2>
+
+                            <p class="form-info__line">
+                            <h2 class="form-info__title form-info__title--comment">Комментарий</h2>
                             <p><textarea class="form-comment" rows="10" cols="45" name="comment"
                                     placeholder="Расскажите обо всех повадках кота"></textarea></p>
                             </p>
-                            <p>
-                            <h2 class="form-info__title form-info">Дополнительно</h2>
-                            <label class="form-label">
-                                <input type="checkbox" checked>Сахарозаменитель
-                            </label>
-                            <label class="form-label">
-                                <input type="checkbox">Питьевая вода
-                            </label>
-                            <label class="form-label">
-                                <input type="checkbox">Молоко
-                            </label>
-
-                            <label class="form-label">
-                                <input type="checkbox">Витамины
-                            </label>
-                            </p>
-
-
-                            <small>* — Обязательные поля</small>
+                            <div class="extra-wrap">
+                                <p class="form-info__line">
+                                <h2 class="form-info__title form-info__title--extra">Дополнительно</h2>
+                                </p>
+                                <p>
+                                    <label class="form-label">
+                                        <input type="checkbox" checked>
+                                        <div class="input__text-extra">Сахарозаменитель</div>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label class="form-label">
+                                        <input type="checkbox">
+                                        <div class="input__text-extra">Питьевая вода</div>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label class="form-label">
+                                        <input type="checkbox">
+                                        <div class="input__text-extra">Молоко</div>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label class="form-label">
+                                        <input type="checkbox">
+                                        <div class="input__text-extra">Витамины</div>
+                                    </label>
+                                </p>
+                            </div>
                         </div>
+                        <small class="extra-small">* — Обязательные поля</small>
                     </fieldset>
-                    <p><input class="form-btn" type="submit" value="Отправить заявку"></p>
                 </form>
             </div>
+            <p><input class="form-btn" type="submit" value="Отправить заявку"></p>
         </section>
     </main>
     <footer class="page-footer">

@@ -18,6 +18,8 @@
     margin-top: 35px; 
     margin-bottom: 35px;
     margin-left: 20px;
+    text-transform: uppercase;
+    width: 226px;
 }
 
 .form-fieldset {
@@ -41,23 +43,12 @@
         }
 }
 
-.form-label {
-    color: @color-gray_light;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-}
-
 .form-input_weight {
     width: 205px;
 }
 
 .form-input_age {
     width: 170px;
-}
-
-.radio-input {
-
 }
 
 .form-info__title {
@@ -93,28 +84,46 @@
     outline: none;
 }
 
-.form-btn {
-    display: block;
-    margin-bottom: 0;
-    margin-left: 20px;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
+.form-comment::placeholder {
     text-align: center;
-    cursor: pointer;
-    width: 280px;
-    height: 40px;
-    background-color: @basic-green;
-    color: @bg-color;
-    text-transform: uppercase;
-    border: none;
-        &:hover {
-            background-color: @basic-green__hover;
-        }
-        &:active {
-            background-color: @basic-green__hover;
-            color: @basic-green__pressed; 
-        }
+    padding: 5px 10px;
+}
+.form-btn {
+    .btn_submit;
+    margin-left: 20px;
 }
 
+.form-info__line {
+    text-align: left;
+    width: 80%; 
+    overflow: hidden;
+}
 
+.form-info__line .form-info__title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ .form-info__title::after {
+    content: ''; 
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    border-bottom: 2px solid @basic-green;
+    margin-right: -100%;
+    right: -24px;  
+}
+
+.form-info__title--contact::after {
+    width: 99px;
+    right: -21px;
+}
+
+.form-info__title--comment::after {
+    width: 158px;
+}
+
+.form-info__title--extra::after {
+    width: 136px;
+} 

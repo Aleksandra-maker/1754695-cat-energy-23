@@ -2,7 +2,33 @@
 @desktop-width: 1200px;
 @mobile-width-only: 767px;
 
-@main-font: "Oswald", "Arial";
+
+ /*Переменные*/
+
+@main-font: "Oswald", "Arial"l;
+.btn_submit {
+  display: block;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    width: 280px;
+    height: 40px;
+    background-color: @basic-green;
+    color: @bg-color;
+    text-transform: uppercase;
+    border: none;
+        &:hover {
+        background-color: @basic-green__hover;
+        }
+        &:active {
+        background-color: @basic-green__hover;
+        color: @basic-green__pressed; 
+        }
+}
+
 
   /* Цвета */
 
@@ -18,6 +44,7 @@
 @main-menu_down: #B3B3B3;
 @border-bottom_grey: #CDCDCD;
 @light-grey: #BDBDBD;
+@grey-hover: #BABABA;
 @input-error_border: #FF8282;
 @basic-green: #68B738;
 @basic-green__hover: #5EAA2F;

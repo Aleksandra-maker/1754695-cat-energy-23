@@ -25,11 +25,6 @@
     min-height: 108px;
 }
 
-.live-example__list {
-    
-    
-}
-
 .live-example__number {
     width: 50%;
     margin: 0 auto;
@@ -63,3 +58,43 @@
     text-transform: uppercase;
 
 }
+.live-slider {
+	width: 82px;
+	height: 12px;
+	background: @bg-color;
+	margin: 20px auto;
+    
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	position: relative;	
+    border: 1px solid @border-bottom_grey; 
+      
+}
+
+.live-slider label {
+	display: block;
+	width: 35px;
+	height: 6px;
+    
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	cursor: pointer;
+	position: absolute;
+	top: 3px;
+	left: 5px;
+	z-index: 1;
+	background: @basic-green;
+    	
+}
+
+.live-slider input[type=checkbox]:checked + label {
+	left: 10px;
+    display: none;
+    
+}
+  .live-slider  input[type="checkbox"] {
+    display: none;
+  }
