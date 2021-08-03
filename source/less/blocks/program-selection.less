@@ -1,0 +1,98 @@
+
+.program-selection__button {    
+    width: 280px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: @basic-green;
+    text-decoration: none;
+    padding: 7px 44px;
+    color: @bg-color;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    vertical-align: middle; 
+    box-sizing: border-box; 
+    font-family: inherit; 
+
+    &:hover {
+        background-color: @basic-green__hover;
+    }
+    &:active {
+        color: @basic-green__pressed;
+    }
+}
+
+.program-selection__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 33px;    
+}
+
+.program-selection__item {
+    position: relative;
+    background-color: @block-bg_color;
+    margin-bottom: 20px;  
+}
+
+.program-selection__item .program-selection__item--slim {
+    width: 100%;
+    min-height: 266px;    
+}
+
+.program-selection__item .program-selection__item--pro {
+    width: 100%;
+    min-height: 266px;
+}
+
+.program-selection__title {
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 140px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-left: 95px;
+}
+
+.program-selection__title::before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    background: url("../img/svg/footer-logo.svg") no-repeat;
+    background-position: 0 0;
+    }
+
+
+.program-selection__description {
+    font-family: inherit;
+    width: 180px;
+    height: 90px;
+    padding: 0;
+    margin: 0;
+    margin: 0 20px 20px 33px;
+    padding-bottom: 26px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400; 
+    border-bottom: @grey-border solid 1px;      
+}
+
+.program-selection__link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: @color-black_dark;  
+}
+
+.program-selection__img {  
+    margin: 20px;
+}

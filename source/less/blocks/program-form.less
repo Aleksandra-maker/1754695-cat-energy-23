@@ -1,0 +1,129 @@
+.program__title {
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    margin-top: 35px;
+    margin-bottom: 37px;
+    margin-left: 20px;
+}
+
+.program__text {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-top: 35px; 
+    margin-bottom: 35px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    width: 226px;
+}
+
+.form-fieldset {
+    border: none;
+}
+
+.form-input {
+    width: 228px;
+    color: @color-gray_light;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 0;
+    padding: 13px 165px 15px 14px;
+    border: @grey-input solid 1px;
+        &:hover {
+            border: @border-bottom_grey solid 1px;
+        }
+        &:active {
+            border: @color-gray_light solid 1px;
+        }
+}
+
+.form-input_weight {
+    width: 205px;
+}
+
+.form-input_age {
+    width: 170px;
+}
+
+.form-info__title {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.form-input__email {
+    padding: 0;
+    width: 340px;
+    padding: 13px 50px 15px 14px; 
+}
+
+.form-input__phone {
+    padding: 0;
+    width: 300px;
+    padding: 13px 72px 15px 14px; 
+}
+
+.form-comment {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: 1px solid @grey-input;
+    &::-webkit-input-placeholder { color: @color-gray_light; }
+    &::-moz-placeholder { color: @color-gray_light; }
+    &:-ms-input-placeholder { color: @color-gray_light; }
+}
+
+.form-comment:focus {
+    outline: none;
+}
+
+.form-comment::placeholder {
+    text-align: center;
+    padding: 5px 10px;
+}
+.form-btn {
+    .btn_submit;
+    margin-left: 20px;
+}
+
+.form-info__line {
+    text-align: left;
+    width: 80%; 
+    overflow: hidden;
+}
+
+.form-info__line .form-info__title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ .form-info__title::after {
+    content: ''; 
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    border-bottom: 2px solid @basic-green;
+    margin-right: -100%;
+    right: -24px;  
+}
+
+.form-info__title--contact::after {
+    width: 99px;
+    right: -21px;
+}
+
+.form-info__title--comment::after {
+    width: 158px;
+}
+
+.form-info__title--extra::after {
+    width: 136px;
+} 
