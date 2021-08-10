@@ -1,21 +1,81 @@
 .advantages__title {
-    font-size: 36px;
-    line-height: 40px;
-    font-weight: 400;
-    margin-bottom: 35px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 
 .advantages__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;		
+}
+
+.advantages__item {
+  position: relative;
+  margin-bottom: 26px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      width: 60px;
+      height: 60px;
+      background-color: @basic-green;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50px 50px;
+    }
+    &:nth-child(1)::before {
+      background-image: url("../img/svg/usefulness.svg");
+    }
+    &:nth-child(2)::before {
+      background-image: url("../img/svg/powder.svg");
+    } 
+    &:nth-child(3)::before {
+      background-image: url("../img/svg/eating.svg");
+    }
+    &:nth-child(4)::before {
+      background-image: url("../img/svg/modification.svg");
+    }  
 }
 
 .advantages__description {
-    width: 200px;
-    min-height: 55px;
+  font-size: 14px;
+  font-family: "Arial";
+  line-height: 18px;
+  color: @color-gray_light;
+  width: 200px;
+  padding-left: 80px;
+  margin: 0;
 }
 
-.advantages__description::before {
-    background-image: url(../img/svg/usefulness.svg);
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    justify-content: space-between;
+    align-content: space-between;
+    min-height: 600px;  
+      &::before {
+        min-width: 80px;
+        min-height: 80px;
+        margin: 0;
+      }
+    }
+    
+  .advantages__description {  
+    width: 250px;
+    padding: 0;
+    padding-top: 110px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+  min-height: auto;
+  margin-bottom: 24px;
+  }
 }

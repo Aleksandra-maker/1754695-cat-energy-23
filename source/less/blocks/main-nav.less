@@ -1,24 +1,115 @@
-.main-nav__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
+.main-nav {
+  position: relative;
+  width: auto;
+}
+/*
+.main-nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: -41px;
+  width: 24px;
+  height: 18px;
+  border: none;
+  background: url("../img/svg/menu-hamburger.svg");
+}
+*/
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
 }
 
-.site-list__link {
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 500;
-    text-decoration: none;
-    color: @color-black_dark;
-    text-transform: uppercase;
-        &:hover {
-            color: @main-menu_hover;
-        }
-        &:active {
-            color: @color-black_dark;
-            border-bottom: 2px solid @basic-green; 
-            font-weight: normal; 
-            padding-bottom: 9px; 
-        }
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-nav--opened .main-nav__wrapper {
+  position: absolute;
+  top: 0;
+  z-index: 101;
+  min-height: 200px;
+  background-color: @bg-color;
+}
+
+.main-nav--opened .main-nav__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 7px;
+  height: 100%;
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+  left: auto;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 23px;
+    width: 36px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (min-width: @mobile-width) {
+  .main-nav--closed .site-list__item {
+    display: none;
+    &--active {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+/* @media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+      width: 1220px;
+  } */
 }
