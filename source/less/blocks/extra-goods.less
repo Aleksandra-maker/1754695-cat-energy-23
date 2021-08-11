@@ -1,49 +1,76 @@
+.extra-goods {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.extra-goods__wrapper {
+
+}
+
 .extra-goods__title {
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 400;
-    padding: 0;
-    margin: 0;
-    margin: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  margin: 20px;
 }
 
 .extra-goods__list {
-    list-style: none;
+  list-style: none;
 }
 
 .extra-goods__name {
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0; 
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0; 
 }
 
 .extra-goods__quantity,
 .extra-goods__price {
-    font-size: 14px;
-    line-height: 14px;  
+  font-size: 14px;
+  line-height: 14px;  
 }
 
 .extra-btn {
-    display: block;
-    margin-bottom: 0;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    text-align: center;
-    cursor: pointer;
-    width: 280px;
-    height: 40px;
-    background-color: @basic-green;
-    color: @bg-color;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    border: none;
+  display: block;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  width: 280px;
+  height: 40px;
+  background-color: @basic-green;
+  color: @bg-color;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  border: none;
 }
 
 .gift__wrap {
-    margin-left: 40px;
-    margin-bottom: 20px;
+  margin-left: 40px;
+  margin-bottom: 20px;
 } 
+
+
+@media (min-width: @tablet-width) {
+  .extra-goods__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-goods__wrapper {
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 86px;
+  }
+}

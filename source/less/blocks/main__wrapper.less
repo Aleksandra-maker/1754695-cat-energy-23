@@ -1,9 +1,12 @@
 
 .welcome {
 position: relative;
-margin-top: 50px;
 z-index: 99;
 margin-bottom: 150px;
+}
+
+.welcome-wrapper {
+    text-align: center;  
 }
 
 .welcome__title {
@@ -13,7 +16,7 @@ margin-bottom: 150px;
     font-weight: 400;
     text-align: center;
     width: 310px;
-    color: @bg-color;
+    color: dark-grey;
     z-index: 100;
     top: 15px; 
     padding: 0;  
@@ -27,7 +30,7 @@ margin-bottom: 150px;
     font-weight: 400;
     text-align: center;
     width: 200px;
-    color: @bg-color;
+    color: dark-grey;
     z-index: 200;
     top: 110px;
     left: 55px;
@@ -55,5 +58,22 @@ margin-bottom: 150px;
 .welcome__img {
     position: relative;
     top: 167px;
-    left: 20px;   
+    left: 20px;  
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__main--image {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+	.welcome__main--image {
+		position: absolute;
+		left: 50%;
+		transfrom: translateX(-50%);
+	}
+	.welcome__img {
+		margin: 0 auto;
+	}
 }
