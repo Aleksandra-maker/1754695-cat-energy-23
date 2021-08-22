@@ -1,3 +1,32 @@
+.extra-wrap {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&__title {
+	display: inline-block;
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 400;
+	margin-bottom: 30px;
+	left: 0;
+	width: 185px;
+		&::after {
+			content: ''; 
+			position: relative;
+			display: inline-block;
+			width: 100%;
+			vertical-align: middle;
+			border-bottom: 2px solid @basic-green;
+			margin-right: -100%;
+			right: -24px;  
+		}
+}
+	&__item {
+		width: 280px;
+	}
+}
 
 .input__text-extra {
   font-size: 16px;
