@@ -15,8 +15,11 @@
 <body class="page-body">
   <header class="page-header">
     <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-      <img class="page-header__img" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип">
-      <img class="page-header__caption" src="img/svg/logo-cat-energy.svg" alt="Cat Energy">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="./img/svg/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="./img/svg/logo-tablet.svg">
+        <img src="./img/svg/mobile-logo.svg" alt="Логотип">
+      </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button" aria-label="Закрыть меню"></button>
@@ -48,10 +51,19 @@
         <p class="welcome__description">Занялся собой? Займись котом!</p>
       </div>
       <div class="welcome__main--image">
-        <img class="welcome__pic" src="img/background-cat.png" width="320" height="302" alt="Кошка">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="./img/index-can-desktop@1x.png 1x, ./index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/index-can-tablet@1x.png 1x, ./img/index-can-tablet@2x.png 2x">
+          <img src="./img/index-can-mobile@1x.png" srcset="./img/index-can-mobile@2x.png 2x" alt="Промо-фото">
+        </picture>
+        <!--
+          <img class="welcome__pic" src="img/background-cat.png" width="320" height="302" alt="Кошка">
         <img class="welcome__back" src="img/background.png" width="320" height="302" alt="Зеленый фон">
+        -->
       </div>
+      <!--
       <img class="welcome__img" src="img/can-mobile.png" width="280" height="270" alt="Банка корма для кошек с курицей">
+      -->
     </section>
     <section class="program-selection">
       <div class="program-selection__wrapper page-content__wrapper">
@@ -161,7 +173,7 @@
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
               Инстаграме</a>
-              <svg class="social__link__social-icon social__link__social-icon--insta" width="16" height="16"></svg>
+            <svg class="social__link__social-icon social__link__social-icon--insta" width="16" height="16"></svg>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
