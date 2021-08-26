@@ -1,0 +1,35 @@
+.form-submit {
+  margin-bottom: 21px;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-small {
+	font-family: "Arial";
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	margin-top: 21px;
+}
+
+//Tablet
+
+@media (min-width: @tablet-width) {
+	.form-btn {
+		width: 282px;
+		height: 52px;
+		margin-right: 61px;
+	}
+	.form-submit {
+		flex-direction: row;
+	}
+}
+
+//Desktop
+
+@media (min-width: @desktop-width) {
+	.form-btn {
+		width: 568px;
+		margin-right: 81px;
+	}
+}

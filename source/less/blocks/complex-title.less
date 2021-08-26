@@ -1,0 +1,66 @@
+.complex-title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 26px;
+  position: relative;
+	font-weight: normal;
+  &::after {
+		content: "";
+		width: 100%;
+		height: 1px;
+		border-top: 2px solid @basic-green;
+		z-index: 1;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 14px;
+	}
+}
+
+.complex-title__text {
+	display: inline-block;
+	padding-left: 0;
+	padding-right: 24px;
+	background-color: white;
+	position: relative;
+	z-index: 2;
+}
+
+//Tablet
+
+@media (min-width: @tablet-width) {
+   .complex-title {
+		 padding-left: 30px;
+		 font-size: 36px;
+		 line-height: 36px;
+		 &::after {
+			 top: 21px;
+		 }
+	 }
+
+	 .complex-title__text {
+		padding-left: 41px;
+    padding-right: 42px;
+	 }
+}
+
+//Desktop
+
+@media (min-width: @desktop-width) {
+	.complex-title {
+		width: 1220px;
+		padding-left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		&::after {
+			width: 100vw;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	.complex-title__text {
+		margin-left: -33px;
+	}
+}
