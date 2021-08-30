@@ -1,27 +1,38 @@
 .copyright {
-  padding: 15px 0;
-}
-
-.copyright__link {
-	display: flex;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
+  text-decoration: none;
+}
+
+.copyright__text {
+	vertical-align: middle;
   padding-top: 14px;
   padding-right: 3px;
   padding-bottom: 20px;
-	margin-right: 130px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 18px;
   font-family: "Arial";
   color: @color-gray_light;
-  text-decoration: none;
     &:active {
       opacity: 0.3;
     }
 }
 
 .copyright__logo {
-	
+	display: block;
+  fill: @main-menu_hover;
+  &:hover {
+    fill: @basic-green;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
+
+//Tablet
 
 @media (min-width: @tablet-width) {
 	.copyright {

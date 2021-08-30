@@ -1,0 +1,82 @@
+.toggle {
+  position: absolute;
+  width: 24px;
+  height: 16px;
+  background-color: transparent;
+  right: 20px;
+  top: 20px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle__icon--opened {
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: @color-black_dark;
+  &::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 0;
+  width: 24px;
+  height: 2px;
+	background-color: @color-black_dark;
+  transition: .5s
+  }
+	&::before {
+	content: "";
+  position: absolute;
+  top: -6px;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: @color-black_dark;
+  transition: .5s
+	}
+}
+
+.toggle__icon--closed {
+	position: absolute;
+	display: block;
+	width: 24px;
+	height: 2px;
+  background-color: transparent;
+	transform: rotate(45deg);
+	&::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 24px;
+	height: 2px;
+	background-color: @color-black_dark;
+  transform: rotate(90deg);
+  transition: .5s
+	}
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: @color-black_dark;
+    transform: rotate(0);
+    }
+}
+
+.toggle--closed {
+  display: none;
+}
+
+//Tablet
+
+@media (min-width: @tablet-width) {
+  .toggle {
+    display: none;
+  }
+}
