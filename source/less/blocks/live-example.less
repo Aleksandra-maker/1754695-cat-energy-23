@@ -1,7 +1,5 @@
 .live-example__wrapper {
   background-color: @extra-grey;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-top: 35px;
 }
 
@@ -11,8 +9,8 @@
   font-weight: 400;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
-  padding-bottom: 30px;   
+  padding-top: 15px;
+  padding-bottom: 10px; 
 }
 
 .live-example__description {
@@ -33,6 +31,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 35px;
 }
 
 .live-example__list {
@@ -84,12 +83,10 @@
 //Tablet
 
 @media (min-width: @tablet-width) {
-  .live-example {
-
-  }
-
   .live-example__wrapper {
-    padding: 0 30px;
+   position: relative;
+   padding-bottom: 45px;
+   background-color: transparent;
   }
 
   .live-example__title {
@@ -116,6 +113,11 @@
     line-height: 37px;
   }
 
+  .live-example__cost {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
   .live-example__item {
     font-family: "Arial";
     width: auto;
@@ -132,6 +134,9 @@
   .live-example__by-time {
     font-size: 20px;
     line-height: 20px;
+    width: 25%;
+    text-align: right;
+    margin-left: auto;
   }
 
   .live-example__cat {
@@ -168,9 +173,19 @@
       &__list--time {
         text-align: left;
       }
+  }
 
-      &__cat {
+  .live-example__result {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
 
-      }
+  .live-example__cat {
+    width: 100%;
+    text-align: left;
+  }
+
+  .live-example__cost {
+    margin-left: 60px;
   }
 }
