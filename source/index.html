@@ -38,41 +38,43 @@
         fill="" />
     </symbol>
   </svg>
-  <header class="page-header">
-    <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-      <picture>
-        <source media="(min-width: 1300px)" srcset="./img/svg/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="./img/svg/logo-tablet.svg">
-        <img class="page-header__img" src="./img/svg/mobile-logo.svg" width="191" height="38" alt="Логотип">
-      </picture>
-    </a>
-    <button class="page-header__toggle toggle toggle--closed" type="button" aria-label="Закрыть меню">
-      <span class="toggle__icon toggle__icon--opened"></span>
-    </button>
-    <nav class="main-nav main-nav--closed">
-      <div class="main-nav__wrapper wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--selected">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <header class="page-header page-header--wrap">
+    <div class="page-header__container wrapper">
+      <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="./img/svg/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/svg/logo-tablet.svg">
+          <img class="page-header__img" src="./img/svg/mobile-logo.svg" width="191" height="38" alt="Логотип">
+        </picture>
+      </a>
+      <button class="page-header__toggle toggle toggle--closed" type="button" aria-label="Закрыть меню">
+        <span class="toggle__icon toggle__icon--opened"></span>
+      </button>
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__wrapper wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--selected site-list__link--active" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
-    <section class="main__wrapper welcome wrapper">
+    <section class="main__wrapper welcome welcome-head wrapper">
       <div class="welcome-wrapper">
         <h1 class="welcome__title welcome-heading">Функциональное питание для котов</h1>
         <p class="welcome__description">Занялся собой? Займись котом!</p>
@@ -84,7 +86,7 @@
           srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
 
-        <source media="(min-width: 1300px)" srcset="./img/index-can-desktop@1x.png 1x, ./index-can-desktop@2x.png 2x">
+        <source media="(min-width: 1220px)" srcset="./img/index-can-desktop@1x.png 1x, ./index-can-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="./img/index-can-tablet@1x.png 1x, ./img/index-can-tablet@2x.png 2x">
         <img class="welcome__main--image" src="./img/index-can-mobile@1x.png" srcset="./img/index-can-mobile@2x.png 2x"
           alt="Промо-фото">
@@ -160,8 +162,8 @@
           </dl>
         </div>
         <div class="live-example__by-time live-example__cat"></div>
-        <p class="live-example__cash">Затраты на питание: 
-          <span class="live-example__cost">15 000</span> 
+        <p class="live-example__cash">Затраты на питание:
+          <span class="live-example__cost">15 000</span>
           <span class="live-example__rub">РУБ.</span>
         </p>
         <img class="live-example__cat--before" src="img/cat-before.png" width="311" height="232" alt="Тучный кот">
@@ -173,7 +175,6 @@
         </div>
         <button class="live-example__btn example-before">Было</button>
         <button class="live-example__btn example-after">Стало</button>
-      </div>
       </div>
     </section>
   </main>
@@ -224,10 +225,10 @@
         </ul>
       </div>
       <div class="page-footer__copyright wrapper">
-        <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy.ru"
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy.ru"
           target="_blank">
           <span class="copyright__text">HTML Academy</span>
-          <svg class="copyright__logo" width="27" height="34">
+          <svg class="copyright__logo" role="img" width="27" height="34">
             <use xlink:href="#htmlacademy-logo"></use>
           </svg>
         </a>

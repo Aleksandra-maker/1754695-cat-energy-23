@@ -60,9 +60,12 @@
     &::after {
     display: none;
     }
-  
   }
 
+  .site-list {
+    border: none;
+  }
+  
   .site-list__link {
     position: relative;
     padding: 0;
@@ -95,7 +98,7 @@
     padding: 0;
     padding-top: 69px;
     background: none;
-    border: none
+    border: none;
   }
 
   .site-list__link {
@@ -111,6 +114,12 @@
   .site-list__link--selected {
     &::before {
       background-color: @bg-color;
+    }
+  }
+
+  .site-list__link--active {
+    &::before {
+    color: @bg-color;
     }
   }
 }
