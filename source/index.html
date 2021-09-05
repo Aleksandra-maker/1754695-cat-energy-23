@@ -161,20 +161,48 @@
             <dd class="live-example__item">затрачено времени</dd>
           </dl>
         </div>
-        <div class="live-example__by-time live-example__cat"></div>
-        <p class="live-example__cash">Затраты на питание:
+        <p class="live-example__heading">Затраты на питание:
           <span class="live-example__cost">15 000</span>
           <span class="live-example__rub">РУБ.</span>
         </p>
-        <img class="live-example__cat--before" src="img/cat-before.png" width="311" height="232" alt="Тучный кот">
-      </div>
-      <div class="live-slider__wrap">
-        <div class="live-slider">
-          <input type="checkbox" value="None" id="live-slider" name="check" />
-          <label for="live-slider"></label>
+        <div class="slider">
+          <div class="slider__item slider__item--before">
+            <picture>
+              <source type="image/webp" media="(min-width:1300px)"
+                srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:768px)"
+                srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
+              <source media="(min-width:1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width:768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="slider__image live-slider__image--before" src="img/before-mobile@1x.png"
+                srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Кот до похудения">
+            </picture>
+          </div>
+          <div class="slider__item slider__item--after">
+            <picture>
+              <source type="image/webp" media="(min-width:1300px)"
+                srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:768px)"
+                srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+              <source media="(min-width:1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width:768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img class="slider__image slider__image--after" src="img/after-mobile@1x.png"
+                srcset="img/after-mobile@2x.png 2x" width="311" height="232" alt="Кот после похудения">
+            </picture>
+          </div>
+          <div class="live-slider__wrap">
+            <div class="live-slider">
+              <input type="checkbox" value="None" id="live-slider" name="check" />
+              <label for="live-slider"></label>
+            </div>
+            <button class="live-slider__btn example-before">Было</button>
+            <button class="live-slider__btn example-after">Стало</button>
+          </div>
         </div>
-        <button class="live-example__btn example-before">Было</button>
-        <button class="live-example__btn example-after">Стало</button>
       </div>
     </section>
   </main>
@@ -224,7 +252,7 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright wrapper">
+      <div class="copyright wrapper">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy.ru"
           target="_blank">
           <span class="copyright__text">HTML Academy</span>

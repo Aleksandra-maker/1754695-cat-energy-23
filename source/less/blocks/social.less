@@ -17,14 +17,12 @@
 }
 
 .social__item {
-  margin-left: 6px;
-  margin-top: 6px;
+  
     
 }
 
 .social__link {
   display: block;
-  vertical-align: middle;
   margin-right: 37px; 
 }
 
@@ -47,6 +45,7 @@
     border: none;
     margin: 0;
     padding: 0;
+    align-items: center;
       &__link {
         width: 30px;
         height: 30px;
@@ -71,6 +70,19 @@
       &:last-child {
         margin-right: 0;
       }
+  }
+
+  .social__list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: -6px;
+    vertical-align: middle;
+    padding: 0;
+  }
+
+  .social__item {
+    margin-right: 0;    
+    margin-bottom: -6px;
   }
 
   .social__icon {

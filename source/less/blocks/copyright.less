@@ -38,13 +38,25 @@
 
 @media (min-width: @tablet-width) {
 	.copyright {
-    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-right: 40px;
   }
 
-	.copyright__link {
+	.copyright__logo {
 		padding: 0;
 		padding-top: 9px;		
-		padding-bottom: 20px;
-		padding-right: 15px;
+		padding-bottom: 0;
+		padding-left: 106px; 
 	}
+
+  .copyright__text {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 7px;
+    margin-right: -83px;
+    padding: 0;
+  }
 }

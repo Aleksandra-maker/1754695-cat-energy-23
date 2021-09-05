@@ -1,0 +1,34 @@
+.slider {
+  margin-bottom: 25px;
+}
+
+.slider__item--before {
+	width: 240px;
+	margin: 0 auto;
+}
+
+.slider__item--after {
+	display: none;
+}
+
+.slider__image {
+	display: block;
+}
+
+//Tablet
+
+@media (min-width: @tablet-width) {
+	.slider {
+		margin-bottom: 45px;
+		position: relative;
+		height: 495px;
+	}
+
+	.slider__image {
+		position: absolute;
+		width: auto;
+		height: auto;
+		left: 0;
+		right: 0;
+	}
+}
