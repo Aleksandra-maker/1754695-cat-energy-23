@@ -1,0 +1,140 @@
+.catalog-more {
+  position: relative;
+  padding-top: 36px;
+  text-align: center;
+  &::before {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-image: url("../img/svg/plus.svg");
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
+  &__img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 26px auto;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: @grey-cross;
+        top: 0;
+        left: 50%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: @grey-cross;
+        top: 50%;
+        left: 0;
+      }
+  }
+
+  &__description {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    margin: 0 20px 30px 20px;
+    text-align: center;
+  }
+
+  &__btn-to-all {
+    width: 280px;
+    height: 40px;
+    background-color: @block-bg_color;
+    color: @color-gray_light;
+    text-transform: uppercase;
+    text-decoration: none;
+      &:hover {
+        background-color: @basic-grey;
+      }
+      &:active {
+        color: @text-grey;
+      }
+  }
+}
+
+//Tablet
+
+@media (min-width: @tablet-width) {
+  .catalog-more {
+    background: none;
+    outline: 1px solid @border-bottom_grey;
+    width: 324px;
+
+    &__img {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      margin-top: 52px;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 60px;
+          height: 2px;
+          background-color: @grey-cross;
+          top: 0;
+          left: 50%;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 60px;
+          height: 2px;
+          background-color: @grey-cross;
+          top: 50%;
+          left: 0;
+        }
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0;
+      width: 134px;
+      text-align: center;
+    }
+    
+    &__description {
+      font-family: "Arial";
+      font-size: 16px;
+      line-height: 18px;
+      color: @color-gray_light;
+      margin-bottom: 87px;
+    }
+
+    &__btn-to-all {
+      
+    }
+  }
+}
+
+//Desktop
+
+@media (min-width: @desktop-width) {
+  .catalog-more {
+
+  }
+}

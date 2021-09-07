@@ -1,0 +1,76 @@
+.additional__list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 34px;
+}
+
+.additional__item {
+margin-bottom: 12px;
+}
+
+.additional__label {
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.additional__checkbox {
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+}
+
+.additional__checkbox+.additional__label::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	border: 1px solid @border-bottom_grey;
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size: 50% 50%;
+	margin-right: 16px;	
+}
+
+.additional__checkbox:checked+.additional__label::before {
+	background-image: url("../img/svg/checked.svg");
+}
+
+.additional__checkbox:not(:disabled):not(:checked)+.additional__label:hover::before {
+  border-color: @grey-hover;
+}
+
+.additional__checkbox:disabled+.additional__label::before {
+  opacity: 0.3;
+}
+
+//Tablet
+
+@media (min-width: @tablet-width) {
+	.additional__list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	}
+
+	.additional__item {
+		margin-bottom: 32px;	
+	}
+}
+
+//Desktop
+
+@media (min-width: @desktop-width) {
+	.additional__list {
+		display: grid;
+		grid-template-columns: 221px 221px 221px 221px;
+		gap: 104px;
+		}
+}

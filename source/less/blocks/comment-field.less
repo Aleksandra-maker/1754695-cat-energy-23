@@ -1,0 +1,32 @@
+.comment-field {
+  width: 280px;
+  height: 150px;
+  overflow: auto;
+  resize: none;
+	border: 1px solid @grey-input;
+	margin-top: 35px;
+	margin-bottom: 30px;
+	&::-webkit-input-placeholder { color: @color-gray_light; }
+	&::-moz-placeholder { color: @color-gray_light; }
+	&:-ms-input-placeholder { color: @color-gray_light; }
+	&::placeholder {
+		text-transform: uppercase;
+		font-size: 16px;
+		line-height: 18px;
+		font-weight: 400;
+		color: @color-gray_light;
+		text-align: center;
+		padding: 9px 12px 0 15px;
+	}
+}
+
+//Tablet
+
+@media (min-width: @tablet-width) {
+	.comment-field {
+		width: 100%;
+		&::placeholder {
+		text-align: left;
+		}
+	}
+}

@@ -1,0 +1,126 @@
+.site-list {
+	border-top: 1px solid @grey-menu_bottom;
+}
+
+.site-list__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin: 0;
+	padding: 0;
+  border-bottom: 1px solid @grey-menu_bottom;
+  &:last-child {
+    border-bottom: 1px solid @grey-menu_bottom;
+  }
+}
+  
+.site-list__link {
+  position: relative;
+	display: block;
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 500;
+  margin: 0 auto;
+  width: 180px;
+	padding: 23px 70px 22px;
+	text-align: center;
+  text-decoration: none;
+  color: @color-black_dark;
+  text-transform: uppercase;
+    &:hover {
+      color: @main-menu_hover;
+    }
+  }
+
+  .site-list__link--selected {
+    &::before {
+    content: "";
+    position: absolute;
+    bottom: 9px;
+    width: 100%;
+    height: 2px;
+    color: @color-black_dark;
+    background-color: @basic-green; 
+    font-weight: 500;
+    } 
+  }
+
+//Tablet
+
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    margin-right: 0;
+    margin-left: 40px;
+    border: none;
+    &:last-child {
+      border-bottom: none;
+    }
+    &::after {
+    display: none;
+    }
+  }
+
+  .site-list {
+    border: none;
+  }
+  
+  .site-list__link {
+    position: relative;
+    padding: 0;
+    padding: 20px 0;
+    background: none;
+    font-size: 18px;
+    line-height: 24px;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .site-list__link--selected {
+    &::before {
+    content: "";
+    position: absolute;
+    bottom: 9px;
+    width: 100%;
+    height: 2px;
+    background-color: @basic-green;
+    } 
+  }
+}
+
+//Desktop
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 478px;
+    padding: 0;
+    padding-top: 69px;
+    background: none;
+    border: none;
+  }
+
+  .site-list__link {
+    color: @bg-color;
+      &:hover {
+        opacity: 0.6;
+      }
+      &:active {
+        opacity: 0.3;
+      }
+  }
+
+  .site-list__link--selected {
+    &::before {
+      background-color: @bg-color;
+    }
+  }
+
+  .site-list__link--active {
+    &::before {
+    color: @bg-color;
+    }
+  }
+}
+  

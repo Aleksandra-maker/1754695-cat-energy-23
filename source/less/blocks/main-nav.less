@@ -1,0 +1,50 @@
+.main-nav__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-nav--closed {
+  display: none;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+//Tablet
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    margin-left: -25px;
+  }
+
+  .main-nav--closed {
+    display: flex;
+  }
+  
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+//Desktop
+
+/* @media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+      width: 1220px;
+  } 
+}
+*/

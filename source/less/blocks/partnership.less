@@ -1,0 +1,98 @@
+.partnership {
+  background-color: @bg-color;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  }
+
+  &__title {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  width: 50%;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-weight: 400;
+  }
+
+  &__text {
+  display: inline-block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  justify-content: space-between;
+  width: 50%;
+  vertical-align: top;
+  }
+}
+
+//Tablet
+
+@media (min-width: @tablet-width) {
+  .partnership {
+    &__wrapper {
+      justify-content: space-between;
+      padding-top: 67px;
+      padding-bottom: 62px;
+    }
+  
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+      margin-left: 40px;
+      width: 160px;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-size: 16px;
+      justify-content: space-between;
+      margin-right: 40px;
+      text-align: right;
+      width: 160px;
+    }
+  }
+}
+
+//Desktop
+
+@media (min-width: @desktop-width) {
+  .partnership {
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 1220px;
+    position: relative;
+
+    &__wrapper {
+      background-color: @bg-color;
+      margin: 0;
+      padding: 67px 90px 87px 76px;
+      position: absolute;
+      top: 95px;
+      width: 410px;
+    }
+
+    &__title {
+      margin: 0;
+    }
+
+    &__text {
+      margin: 0;
+      text-align: left;
+    }
+  }
+}
+

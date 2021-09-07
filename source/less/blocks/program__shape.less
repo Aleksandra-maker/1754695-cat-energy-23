@@ -1,0 +1,67 @@
+.program__shape {
+	padding: 20px 0;
+	border-top: 1px solid @grey-border;
+	border-bottom: 1px solid @grey-border;
+}
+
+.program__shape-input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.program__shape-input+.program__shape-label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.program__shape-input+.program__shape-text:hover::before {
+  border-color: @grey-hover;
+}
+/*
+.program__shape-input:disabled+.program__shape-text::before {
+    opacity: 0.3;
+}
+*/
+
+.program__shape-text {
+	display: inline-block;
+	position: relative;
+	padding: 0 0 0 40px;
+	cursor: pointer;
+  color: @color-gray_light;
+  font-size: 16px;
+  line-height: 18px;
+	vertical-align: middle;
+  text-transform: uppercase;
+}
+.program__shape-text::before {
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: 0;
+	width: 28px;
+	height: 28px;
+	border: 1px solid @border-bottom_grey;
+	border-radius: 50%;
+	background: @bg-color;
+}
+
+.program__shape-text::after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 8px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: @basic-green;
+	opacity: 0;
+	transition: .2s;
+}
+
+.program__shape-label .program__shape-input:checked + .program__shape-text::after {
+	opacity: 1;
+}
+
