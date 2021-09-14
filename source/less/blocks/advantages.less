@@ -1,13 +1,19 @@
 .advantages {
-  display: flex;
-  flex-wrap: wrap;
+  padding-top: 28px;
+  padding-bottom: 19px;
+}
+
+.advantages__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .advantages__title {
+  margin: 0 0 40px 0;
+  padding: 0;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  margin-bottom: 30px;
 }
 
 .advantages__list {
@@ -17,47 +23,62 @@
 }
 
 .advantages__item {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   position: relative;
   margin-bottom: 26px;
+
   &::before {
     content: "";
-    margin-right: 20px;
     position: absolute;
     top: -3px;
+    left: 0;
     width: 60px;
     height: 60px;
     background-color: @basic-green;
+    z-index: 1;
+    display: block;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50px;
+    background-size: cover;
+    z-index: 2;
+    display: block;
   }
-    &:nth-child(1)::before {
-      background-image: url("../img/icon-leaf@1x.png");
-    }
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/icon-leaf@2x.png");
-    }
-    &:nth-child(2)::before {
-      background-image: url("../img/icon-powder@1x.png");
-    }
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/icon-powder@2x.png");
-    }
-    &:nth-child(3)::before {
-      background-image: url("../img/icon-eat@1x.png");
-    }
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/icon-eat@2x.png");
-    }
-    &:nth-child(4)::before {
-      background-image: url("../img/icon-alarm@1x.png");
-    }
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/icon-alarm@2x.png");
-    }  
+}
+
+.advantages__item--usefulness::after {
+  background-image: url("../img/svg/icon-leaf.svg");
+  width: 30px;
+  height: 32px;
+  top: 11px;
+  left: 15px;
+}
+
+.advantages__item--powder::after {
+  background-image: url("../img/svg/icon-tub.svg");
+  width: 29px;
+  height: 31px;
+  top: 10px;
+  left: 15px;
+}
+
+.advantages__item--eating::after {
+  background-image: url("../img/svg/icon-eat.svg");
+  width: 25px;
+  height: 30px;
+  top: 12px;
+  left: 18px;
+}
+
+.advantages__item--modification::after {
+  background-image: url("../img/svg/icon-alarm.svg");
+  width: 32px;
+  height: 33px;
+  top: 10px;
+  left: 14px;
 }
 
 .advantages__description {
@@ -81,44 +102,86 @@
   .advantages {
     position: relative;
     display: block;
+    padding: 44px 30px 57px;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  .advantages__title{
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 70px 0;
+  }
+
+  .advantages__wrapper{
+    width: auto;
   }
 
   .advantages__list {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 3px; 
-      &::before {
-        content: "";
-        min-width: 80px;
-        min-height: 80px;
-        top: 0;
-        margin-bottom: 30px;
-      }
+    display: flex;
+    flex-wrap: wrap;
     }
 
   .advantages__item {
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 37px;
-    width: 250px;
+    position: relative;
+    width: 46%;
+    box-sizing: border-box;
+    padding-right: 79px;
+    margin-bottom: 86px;
   }
-    
-  .advantages__description {  
-    width: calc(100%-74px);
-    padding: 110px 0 45px 0;
+
+  .advantages__item:nth-last-child(1),
+  .advantages__item:nth-last-child(2){
+    margin-bottom: 0;
+  }
+
+  .advantages__item::before {
+    top: 2px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.advantages__item--usefulness::after {
+  top: 27px;
+  left: 24px;
+}
+
+.advantages__item--powder::after {
+  top: 26px;
+  left: 27px;
+}
+
+.advantages__item--eating::after {
+  top: 28px;
+  left: 28px;
+}
+
+.advantages__item--modification::after {
+  top: 26px;
+  left: 26px;
+}
+
+  .advantages__description { 
+    padding: 114px 0 45px 0;
     font-size: 16px;
     line-height: 24px;
+    width: auto;
   }
 
   .advantages__number {
     position: absolute;
     display: block;
     font-size: 280px;
-    line-height: 280px;
+    line-height: 209px;
     color: #F2F2F2;
     z-index: -1;
-    top: -325px;
-    left: 114px;
+    top: 0;
+    left: 115px;
+    padding: 0;
+    margin: 0;
   }
 }
 
