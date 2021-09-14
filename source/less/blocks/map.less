@@ -1,9 +1,19 @@
+.map{
+  margin-bottom: 37px;
+}
+
 .map__live {
   width: 100%;
-  margin-bottom: 30px;
 }
 
 .map__live iframe {
   border: none;
   overflow: hidden;   
+}
+
+@media (min-width: @tablet-width) {
+  .map__live {
+    height: 405px;
+    width: 100%;  
+  }
 }
