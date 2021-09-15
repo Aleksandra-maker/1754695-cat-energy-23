@@ -26,7 +26,7 @@ buttonMenu.addEventListener("click", function () {
         siteNavigation.classList.remove("main-nav--closed");
     } else {
         siteNavigation.classList.add("main-nav--closed");
-    }   
+    }
 });
 
 rangeSwitchWas.addEventListener("click", function (evt) {

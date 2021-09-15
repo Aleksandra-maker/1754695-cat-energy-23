@@ -23,11 +23,11 @@
   right: 0;
   width: 24px;
   height: 2px;
-	background-color: @color-black_dark;
+  background-color: @color-black_dark;
   transition: .5s
   }
-	&::before {
-	content: "";
+  &::before {
+  content: "";
   position: absolute;
   top: -6px;
   right: 0;
@@ -35,27 +35,27 @@
   height: 2px;
   background-color: @color-black_dark;
   transition: .5s
-	}
+  }
 }
 
 .toggle__icon--closed {
-	position: absolute;
-	display: block;
-	width: 24px;
-	height: 2px;
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 2px;
   background-color: transparent;
-	transform: rotate(45deg);
-	&::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	display: block;
-	width: 24px;
-	height: 2px;
-	background-color: @color-black_dark;
+  transform: rotate(45deg);
+  &::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: @color-black_dark;
   transform: rotate(90deg);
-  transition: .5s
-	}
+  transition: .5s;
+  }
 
   &::before {
     content: "";

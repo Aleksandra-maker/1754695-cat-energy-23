@@ -45,16 +45,19 @@
 @media (min-width: @tablet-width) {
   .partnership {
     padding: 0 72px;
+    background-color: #f2f2f2;
     &__wrapper {
       justify-content: space-between;
-      padding-top: 67px;
+      padding-top: 71px;
       padding-bottom: 62px;
     }
-  
+
     &__title {
       font-size: 20px;
-      line-height: 24px;
+      line-height: 25px;
       width: 160px;
+      padding-top: 2px;
+      padding-bottom: 2px;
     }
 
     &__text {
@@ -67,24 +70,30 @@
       width: 160px;
     }
   }
+  .page-body--index .partnership{
+    background-color: #ffffff;
+  }
+
 }
 
 //Desktop
 
 @media (min-width: @desktop-width) {
   .partnership {
-    margin: 0 auto;
-    padding: 0 40px;
-    width: 1220px;
+    margin: 0;
+    padding: 0;
+    width: 570px;
     position: relative;
+    z-index: 2;
+    left: 50%;
+    margin-left: -610px;
+    background: #ffffff;
+    padding: 62px 84px 57px 76px;
+    box-sizing: border-box;
 
     &__wrapper {
-      background-color: @bg-color;
       margin: 0;
-      padding: 67px 90px 87px 76px;
-      position: absolute;
-      top: 95px;
-      width: 410px;
+      padding: 0;
     }
 
     &__title {
@@ -97,4 +106,3 @@
     }
   }
 }
-

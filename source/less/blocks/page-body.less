@@ -4,3 +4,29 @@
   margin: 0;
   color: @color-black_dark;
 }
+
+
+
+@media (min-width: @desktop-width) {
+  .page-body--index{
+    position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        /*bg-green-desktop-menu.jpg*/
+        width: 50%;
+        height: 400px;
+        left: 50%;
+        top: 0;
+        background: url("../img/bg-green-desktop-menu.jpg") repeat top left;
+        display: block;
+      }
+    }
+    .page-body--index .page-body__site-list-link{
+      color: @bg-color;
+
+      &::before{
+        background-color: @bg-color;
+      }
+    }
+  }

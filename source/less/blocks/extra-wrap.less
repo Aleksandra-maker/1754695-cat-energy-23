@@ -1,31 +1,30 @@
 .extra-wrap {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;
-
-	&__title {
-	display: inline-block;
-	font-size: 24px;
-	line-height: 26px;
-	font-weight: 400;
-	margin-bottom: 30px;
-	left: 0;
-	width: 185px;
-		&::after {
-			content: ''; 
-			position: relative;
-			display: inline-block;
-			width: 100%;
-			vertical-align: middle;
-			border-bottom: 2px solid @basic-green;
-			margin-right: -100%;
-			right: -24px;  
-		}
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__title {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    left: 0;
+    width: 185px;
+  &::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    border-bottom: 2px solid @basic-green;
+    margin-right: -100%;
+    right: -24px;
+  }
 }
-	&__item {
-		width: 280px;
-	}
+  &__item {
+    width: 280px;
+  }
 }
 
 .input__text-extra {
@@ -44,42 +43,33 @@
 
 .form-label input {
   position: absolute;
-	z-index: -1;
-	opacity: 0;
-	margin: 10px 0 0 20px;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
 }
 
 .input__text-extra {
   position: relative;
-	padding: 0 0 0 60px;
-	cursor: pointer;
+  padding: 0 0 0 60px;
+  cursor: pointer;
 }
 
 .input__text-extra::before {
-	content: '';
-	position: absolute;
-	top: -4px;
-	left: 0;
-	width: 30px;
-	height: 30px;
-	border: 1px solid @border-bottom_grey;
-	transition: .2s;
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid @border-bottom_grey;
+  transition: .2s;
 }
 .input__text-extra::after {
-	content: '';
-	position: absolute;
-	top: -2px;
-	left: 2px;
-	width: 26px;
-	height: 26px;
-	transition: .2s;
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  transition: .2s;
 }
-/*
-.form-label input[type="checkbox"]+.input__text-extra:hover::before {
-	border-color: #9FD468;
-}
-.form-label input[type="checkbox"]+.input__text-extra:hover::after {
-	left: 26px;
-    border-color: #9FD468;
-}
-*/

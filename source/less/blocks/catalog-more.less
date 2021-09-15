@@ -1,15 +1,6 @@
 .catalog-more {
   position: relative;
-  padding-top: 36px;
   text-align: center;
-  &::before {
-    display: block;
-    content: "";
-    width: 30px;
-    height: 30px;
-    margin: 0 auto;
-    background-image: url("../img/svg/plus.svg");
-  }
 
   &__title {
     font-size: 16px;
@@ -17,9 +8,7 @@
     font-weight: 400;
     text-transform: uppercase;
     padding: 0;
-    margin: 0;
-    margin-top: 25px;
-    margin-bottom: 0;
+    margin: 25px 0 5px;
   }
 
   &__img {
@@ -27,24 +16,9 @@
     width: 30px;
     height: 30px;
     margin: 26px auto;
-      &::before {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 2px;
-        background-color: @grey-cross;
-        top: 0;
-        left: 50%;
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 2px;
-        background-color: @grey-cross;
-        top: 50%;
-        left: 0;
-      }
+    display: block;
+    background: url("../img/svg/plus.svg") no-repeat center center;
+    background-size: cover;
   }
 
   &__description {
@@ -52,18 +26,19 @@
     line-height: 16px;
     font-weight: 400;
     padding: 0;
-    margin: 0;
-    margin: 0 20px 30px 20px;
+    margin: 0 20px 21px 20px;
     text-align: center;
+    font-family: Arial;
   }
 
   &__btn-to-all {
-    width: 280px;
-    height: 40px;
     background-color: @block-bg_color;
     color: @color-gray_light;
     text-transform: uppercase;
     text-decoration: none;
+    display: block;
+    margin: 0 20px;
+    padding: 12px 0 10px 0px;
       &:hover {
         background-color: @basic-grey;
       }
@@ -78,32 +53,22 @@
 @media (min-width: @tablet-width) {
   .catalog-more {
     background: none;
-    outline: 1px solid @border-bottom_grey;
-    width: 324px;
-
-    &__img {
-      position: relative;
-      width: 60px;
-      height: 60px;
-      margin-top: 52px;
-        &::before {
-          content: "";
-          position: absolute;
-          width: 60px;
-          height: 2px;
-          background-color: @grey-cross;
-          top: 0;
-          left: 50%;
-        }
-        &::after {
-          content: "";
-          position: absolute;
-          width: 60px;
-          height: 2px;
-          background-color: @grey-cross;
-          top: 50%;
-          left: 0;
-        }
+    width: 46%;
+    position: relative;
+    padding-top: 106px;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: calc(100% - 75px);
+      display: block;
+      bottom: 0;
+      left: 0;
+      outline: 1px solid @border-bottom_grey;
+      box-sizing: border-box;
+      z-index: 1;
     }
 
     &__title {
@@ -115,19 +80,37 @@
       margin: 0;
       width: 134px;
       text-align: center;
+      margin: 0 auto 24px;
+      position: relative;
+      z-index: 2;
     }
-    
+
     &__description {
       font-family: "Arial";
       font-size: 16px;
       line-height: 18px;
       color: @color-gray_light;
-      margin-bottom: 87px;
+      position: relative;
+      z-index: 2;
+      width: 183px;
+      min-height: 119px;
+      margin: 0 auto;
     }
 
     &__btn-to-all {
-      
+      z-index: 2;
+      box-sizing: border-box;
+      position: absolute;
+      bottom: 39px;
+      left: 20px;
+      width: calc(100% - 78px);
     }
+  }
+
+  .catalog-more__img{
+    width: 60px;
+    height: 60px;
+    margin: 26px auto 47px;
   }
 }
 
@@ -135,6 +118,14 @@
 
 @media (min-width: @desktop-width) {
   .catalog-more {
+    width: 100%;
 
+    &::after{
+      height: calc(100% - 88px);
+    }
+  }
+
+  .catalog-more__img {
+    margin: 34px auto 47px;
   }
 }

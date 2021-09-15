@@ -8,12 +8,19 @@
 
 .map__live iframe {
   border: none;
-  overflow: hidden;   
+  overflow: hidden;
 }
 
 @media (min-width: @tablet-width) {
   .map__live {
     height: 405px;
-    width: 100%;  
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__live {
+    width: 100%;
+    height: 100%;
   }
 }

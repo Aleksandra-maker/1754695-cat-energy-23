@@ -1,97 +1,93 @@
-
 .welcome {
   z-index: 99;
-	text-align: center;  
-	overflow: hidden;
+  text-align: center;
+  overflow: hidden;
 }
 
 .welcome__container {
-	position: relative;
-	padding-bottom: 199px;
-	margin-bottom: 2px;
-
-	&::after{
-		content: "";
-		position: absolute;
-		width: 280px;
-		height: 270px;
-		left: 50%;
-		transform: translateX(-50%);
-		bottom: 0;
-		background: url("../img/index-can-mobile@1x.png") no-repeat top left;
-	}
+  position: relative;
+  padding-bottom: 199px;
+  margin-bottom: 2px;
+  &::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 270px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background: url("../img/index-can-mobile@1x.png") no-repeat top left;
+  }
 }
 
 .welcome__wrapper {
-	position: relative;
+  position: relative;
+  &::after {
+  content: "";
+  position: absolute;
+  width: 50vw;
+  min-height: 302px;
+  height: 100%;
+  background:  url("../img/green-bg-right.jpg") repeat-x 0 0;
+  left: 50%;
+  top: 0;
+  z-index: -2;
+  }
 
-	&::after {
-		content: "";
-    position: absolute;
-    width: 50vw;
-    min-height: 302px;
-    height: 100%;
-    background:  url("../img/green-bg-right.jpg") repeat-x 0 0;
-    left: 50%;
-    top: 0;
-		z-index: -2;
-	}
-
-	&::before{
-		content: "";
-    position: absolute;
-		width: 100vw;
-		min-height: 302px;
-    height: 100%;
-		background: #64a73c;
-		left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-		background-size: 2px 100%;
-		display: block;
-		z-index: -3;
-	}
+  &::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  min-height: 302px;
+  height: 100%;
+  background: #64a73c;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  background-size: 2px 100%;
+  display: block;
+  z-index: -3;
+  }
 }
 
 .welcome__wrapper-bg {
-	position: relative;
-	padding-bottom: 100px;
-	padding-top: 27px;
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 27px;
+  &::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  min-height: 302px;
+  height: 100%;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: -1;
+  }
 
-	&::after {
-		content: "";
-    position: absolute;
-    width: 100%;
-    min-height: 302px;
-    height: 100%;
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: auto 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-		z-index: -1;
-
-		@media (min-resolution: 2ddpx) {
-			background-image: url("../img/index-background-mobile@2x.jpg");
-		}
-	}
+  @media (min-resolution: 2ddpx) {
+  background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
-    
+
 .welcome__title {
-	padding: 0;
-	margin: 0 auto 26px;
-	font-size: 36px;
-	line-height: 36px;
-	font-weight: 400;
-	color: #FFFFFF;
-	width: 250px;
+  padding: 0;
+  margin: 0 auto 26px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #FFFFFF;
+  width: 250px;
 }
-    
+
 .welcome__description {
-	padding: 0;  
-	margin: 0;
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -100,8 +96,8 @@
 }
 
 .welcome__button {
-  display: block;  
-  box-sizing: border-box; 
+  display: block;
+  box-sizing: border-box;
   padding: 11px 20px 11px;
   margin: 0 20px;
   background-color: @basic-green;
@@ -111,25 +107,24 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  text-align: center; 
-  font-family: inherit; 
-    &:hover {
-      background-color: @basic-green__hover;
-    }
-    &:active {
-      color: @basic-green__pressed;
-    }
+  text-align: center;
+  font-family: inherit;
+  &:hover {
+  background-color: @basic-green__hover;
+  }
+  &:active {
+  color: @basic-green__pressed;
+  }
 }
 
 //Tablet
-    
+
 @media (min-width: @tablet-width) {
-  .welcome{
+  .welcome {
     position: relative;
     padding-bottom: 524px;
     text-align: left;
-
-    &::after{
+    &::after {
       content: "";
       display: block;
       width: 709px;
@@ -140,59 +135,56 @@
       transform:translateX(-50%);
       background: url("../img/index-can-tablet@1x.png") no-repeat top left;
       z-index: -1;
-
     }
   }
-  .welcome__container{
+  .welcome__container {
     padding-bottom: 0;
     margin-bottom: 0;
   }
 
-  .welcome__container::after{
+  .welcome__container::after {
     display: none;
   }
 
-	.welcome__wrapper {
-		position: relative;
- 		text-align: left;
-    padding-left: 116px;
-    padding-top: 74px;
- 
-    &::after{
-      display: none;
-    }
+  .welcome__wrapper {
+  position: relative;
+  text-align: left;
+  padding-left: 116px;
+  padding-top: 74px;
+  &::after {
+  display: none;
+  }
+  &::before {
+  display: none;
+  }
+}
 
-    &::before{
-      display: none;
-    }    
-	}
-
-  .welcome__wrapper-bg{
-    padding: 0;
+  .welcome__wrapper-bg {
+  padding: 0;
   }
 
-  .welcome__wrapper-bg::after{
+  .welcome__wrapper-bg::after {
     display: none;
   }
 
   .welcome__main--image {
-		position: absolute;
-		top: 230px;
-		left: 0;
-		right: 0;
-		height: auto;
-		margin: 0 auto;
+  position: absolute;
+  top: 230px;
+  left: 0;
+  right: 0;
+  height: auto;
+  margin: 0 auto;
   }
-    
+
   .welcome__title {
-	margin: 0 0 42px;
+  margin: 0 0 42px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 400;
   color: @color-black_dark;
-	width: 450px;
+  width: 450px;
   }
-    
+
   .welcome__description {
     font-size: 20px;
     line-height: 20px;
@@ -204,7 +196,7 @@
     margin-bottom: 48px;
   }
 
-  .welcome__button{
+  .welcome__button {
     display: inline-block;
     vertical-align: middle;
     font-size: 20px;
@@ -212,35 +204,79 @@
     margin: 0px auto 0 121px;
   }
 }
-    
-//Desktop
-    
-@media (min-width: @desktop-width) {
-	.welcome-wrapper {
-		min-height: 580px;
-		padding-left: 80px;
-	}
 
-  .welcome__main--image {
-   	top: -35px;
-	 	left: 230px;
+//Desktop
+
+@media (min-width: @desktop-width) {
+  .welcome {
+    padding-bottom: 0;
+    overflow: visible;
+    &::before {
+      content: "";
+      width: calc(50vw - 9px);
+      left: 50%;
+      top: -120px;
+      background: url(../img/index-background-desktop@1x.jpg) no-repeat top left;
+      background-size: cover;
+      height: calc(100% + 119px);
+      position: absolute;
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 552px;
+      height: 499px;
+      position: absolute;
+      bottom: 53px;
+      left: 50%;
+      transform: translateX(0);
+      background: url(../img/index-can-desktop@1x.png) no-repeat top left;
+      background-size: cover;
+      margin-left: -161px;
+    }
   }
+
+  .welcome__container {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+    }
+
+    .welcome__wrapper {
+      padding-left: 80px;
+      padding-top: 77px;
+      padding-bottom: 184px;
+    }
 
   .welcome__title {
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
     color: @color-black_dark;
-		width: 50%;
-		margin-top: 50px;	
+    width: 50%;
+    margin: 31px 0 41px;
   }
-        
+
   .welcome__description {
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
     text-transform: uppercase;
     color: @color-black_dark;
-		margin-bottom: 50px;
+    margin-bottom: 51px;
+    padding-left: 0px;
+  }
+
+  .welcome__button {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    padding: 18px 26px 19px;
+    margin: 0 auto 0 0;
+    position: relative;
+    left: 50%;
+    margin-left: -530px;
+    bottom: 184px;
   }
 }

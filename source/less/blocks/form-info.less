@@ -1,115 +1,115 @@
 .form-info {
-	margin-top: 35px;
-	text-align: left;
-    width: 80%; 
-    overflow: hidden;
+  margin-top: 35px;
+  text-align: left;
+  width: 80%;
+  overflow: hidden;
 }
 
 .form-info__text {
-    color: @color-gray_light;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-		margin-right: 15px;
+  color: @color-gray_light;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-right: 15px;
 }
 
-  .form-info__title {
-		display: inline-block;
-    font-size: 24px;
-    line-height: 26px;
-    font-weight: 400;
-    margin-bottom: 30px;
-		left: 0;
-		width: 185px;
-			&::after {
-				content: ''; 
-				position: relative;
-				display: inline-block;
-				width: 100%;
-				vertical-align: middle;
-				border-bottom: 2px solid @basic-green;
-				margin-right: -100%;
-				right: -24px;  
-		}
-	}
-  
-  .form-info__title--contact::after {
-    width: 99px;
-    right: -21px;
+.form-info__title {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  left: 0;
+  width: 185px;
+  &::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    border-bottom: 2px solid @basic-green;
+    margin-right: -100%;
+    right: -24px;
   }
+}
+
+.form-info__title--contact::after {
+  width: 99px;
+  right: -21px;
+}
 
 .form-info__contact {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
 }
 
 .form-info__contact img {
-	position:absolute;
-	bottom:2px;
-	right: 5px;
-	width:20px;
-	height:20px;
+  position:absolute;
+  bottom:2px;
+  right: 5px;
+  width:20px;
+  height:20px;
 }
 
-  .form-info__input {
-    text-transform: uppercase;
-		font-size: 16px;
-		line-height: 18px;
-		color: @color-gray_light;
-		border: 1px solid @border-bottom_grey;
-		height: 43px;
-		position: relative;
-		
+.form-info__input {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: @color-gray_light;
+  border: 1px solid @border-bottom_grey;
+  height: 43px;
+  position: relative;
 }
-  
-  .form-input__email {
-		position: relative;
-    padding: 0;
-    width: 200px; 
-		padding-left: 15px;
-}
- 
-  .form-input__phone {
-    padding: 0;
-    width: 200px;
-    padding-left: 15px; 
-  }
 
-	.form-info__comment {
-		padding: 0;
-		margin-top: 80px;
-	}
-  
-  .form-info__field {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    border: 1px solid @grey-input;
-      &::-webkit-input-placeholder { color: @color-gray_light; }
-      &::-moz-placeholder { color: @color-gray_light; }
-      &:-ms-input-placeholder { color: @color-gray_light; }
-  }
-  
-  .form-info__field:focus {
-    outline: none;
-  }
-  
-  .form-info__field::placeholder {
-    text-align: center;
-    padding: 5px 10px;
-  }
-  .form-btn {
-    .btn_submit;
-      margin-left: 20px;
-  }
-  
-  .form-info__title--comment::after {
-    width: 158px;
-  }
-  
-  .form-info__title--extra::after {
-    width: 136px;
-  }
+.form-input__email {
+  position: relative;
+  padding: 0;
+  width: 200px;
+  padding-left: 15px;
+}
+
+.form-input__phone {
+  padding: 0;
+  width: 200px;
+  padding-left: 15px;
+}
+
+.form-info__comment {
+  padding: 0;
+  margin-top: 80px;
+}
+
+.form-info__field {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid @grey-input;
+    &::-webkit-input-placeholder { color: @color-gray_light; }
+    &::-moz-placeholder { color: @color-gray_light; }
+    &:-ms-input-placeholder { color: @color-gray_light; }
+}
+
+.form-info__field:focus {
+  outline: none;
+}
+
+.form-info__field::placeholder {
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.form-btn {
+  .btn_submit;
+    margin-left: 20px;
+}
+
+.form-info__title--comment::after {
+  width: 158px;
+}
+
+.form-info__title--extra::after {
+  width: 136px;
+}
