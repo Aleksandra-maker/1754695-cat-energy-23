@@ -1,20 +1,40 @@
-.program-form {
-  &__title {
-    margin-top: 35px;
-    margin-bottom: 37px;
-  }
 
-  &__text {
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    margin-top: -3px;
-    margin-bottom: 38px;
-    margin-left: 20px;
-    vertical-align: middle;
-    text-transform: uppercase;
-    width: 230px;
+.program-form__title {
+  margin-top: 35px;
+  margin-bottom: 37px;
+}
+
+.program-form__text {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-top: -3px;
+  margin-bottom: 39px;
+  margin-left: 20px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  width: 230px;
+}
+
+//Tablet
+
+@media (min-width: @tablet-width) {
+  .program-form__text {
+    font-size: 20px;
+    line-height: 30px;
+    width: 350px;
+    margin-left: 70px;
+    margin-bottom: 65px;
+  }
+}
+
+//Desktop
+
+@media (min-width: @desktop-width) {
+  .program-form__text {
+    margin-left: 110px;
+    margin-bottom: 66px;
   }
 }

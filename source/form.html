@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
   <title>Кэт энерджи-форма подбора программы</title>
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" sizes="152x152" href="favicon.ico/favicon152.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon32.png">
@@ -15,10 +18,10 @@
 <body class="page-body">
   <!--icons-sprite-->
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-  <symbol id="vk-icon" viewBox="0 0 23 13">
-    <path
-      d="M0.0703125 1.99254C0.0703125 1.3707 0.493433 1.0354 1.33967 0.986623L4.60062 1.00491C4.81947 1.00491 4.96537 1.09636 5.03833 1.27925C5.3739 2.19372 5.74961 2.98322 6.16543 3.64773C6.58126 4.31225 7.12475 5.07735 7.7959 5.94305C7.85426 6.05279 7.9491 6.10766 8.08041 6.10766C8.18255 6.10766 8.26279 6.06498 8.32115 5.97963L8.38681 5.77845L8.4087 2.61438C8.4087 2.39491 8.34669 2.24859 8.22267 2.17543C8.09865 2.10228 7.86885 2.04741 7.53328 2.01083C7.27065 1.97425 7.13934 1.84013 7.13934 1.60846C7.13934 1.55969 7.14663 1.52311 7.16122 1.49873C7.46762 0.706186 8.34304 0.309915 9.78749 0.309915L11.0131 0.291626C11.5675 0.291626 12.0271 0.407459 12.3919 0.639125C12.7566 0.87079 12.939 1.23658 12.939 1.73649V5.88818C13.0411 5.94915 13.136 5.97963 13.2235 5.97963C13.4424 5.97963 13.632 5.86989 13.7925 5.65042C15.3975 3.77271 16.2656 2.51684 16.3969 1.8828C16.3969 1.87061 16.4115 1.84013 16.4407 1.79136C16.5428 1.60846 16.7106 1.44995 16.9441 1.31583C17.1775 1.18171 17.3818 1.09026 17.5568 1.04149C17.6152 1.01711 17.6809 1.00491 17.7538 1.00491H21.1461L21.3649 1.0232C21.6567 1.0232 21.8829 1.13903 22.0434 1.3707C22.1017 1.44386 22.1419 1.52311 22.1637 1.60846C22.1856 1.69381 22.2002 1.77916 22.2075 1.86451C22.2148 1.94987 22.2185 1.99864 22.2185 2.01083V2.13886C22.1163 2.63877 21.8574 3.17221 21.4415 3.73918C21.0257 4.30615 20.4968 4.91884 19.8548 5.57726C19.2129 6.23568 18.8116 6.66853 18.6511 6.87581C18.5198 7.02213 18.4542 7.15625 18.4542 7.27818C18.4542 7.37572 18.5125 7.48546 18.6292 7.60739L21.8245 10.9726C21.9996 11.1677 22.0871 11.3811 22.0871 11.6128C22.0871 11.8932 21.9558 12.1249 21.6932 12.3078C21.4306 12.4907 21.1169 12.5943 20.7521 12.6187L20.3801 12.637H17.0535C17.0389 12.637 17.0097 12.64 16.9659 12.6461C16.9222 12.6522 16.893 12.6553 16.8784 12.6553C16.5574 12.6553 16.2583 12.5394 15.9811 12.3078C15.879 12.2102 15.1932 11.4908 13.9238 10.1496C13.8509 10.0643 13.7488 9.98501 13.6175 9.91185C13.5591 10.1069 13.4825 10.3874 13.3877 10.7532C13.2928 11.119 13.2235 11.3811 13.1797 11.5396L13.1141 11.8505C12.9682 12.2773 12.6618 12.5333 12.1949 12.6187L11.8885 12.637H9.74371C8.53271 12.637 7.32536 12.1736 6.12166 11.247C4.91796 10.3203 3.83462 9.12236 2.87166 7.65311C1.9087 6.18386 1.01139 4.4738 0.17974 2.52293C0.106788 2.36442 0.0703125 2.18763 0.0703125 1.99254ZM13.2235 6.7295C12.9171 6.7295 12.6399 6.65939 12.3919 6.51917C12.1438 6.37895 12.0198 6.18691 12.0198 5.94305V1.73649C12.0198 1.49263 11.9469 1.31888 11.801 1.21524C11.655 1.1116 11.3997 1.05978 11.035 1.05978L9.78749 1.09636C9.1601 1.09636 8.68591 1.18781 8.36493 1.3707C9.0069 1.62675 9.32789 2.04131 9.32789 2.61438V5.83331C9.29871 6.13814 9.1528 6.39114 8.89018 6.59233C8.62755 6.79351 8.33574 6.8941 8.01476 6.8941C7.57705 6.8941 7.24147 6.7173 7.00802 6.36371C5.86998 4.92494 5.02374 3.55933 4.4693 2.26688L4.27233 1.79136L1.36156 1.77307C1.17188 1.77307 1.0661 1.78221 1.04422 1.8005C1.02233 1.81879 1.01139 1.87061 1.01139 1.95596C1.01139 2.0657 1.02598 2.18153 1.05516 2.30346L1.51476 3.32767C2.74035 5.97353 4.07172 8.05853 5.50886 9.58264C6.94601 11.1068 8.35763 11.8688 9.74371 11.8688H11.9323C12.0198 11.8688 12.0855 11.8475 12.1292 11.8048C12.173 11.7621 12.2095 11.6798 12.2387 11.5579L12.2824 11.375L12.6983 9.76554C12.815 9.54606 12.9171 9.39975 13.0047 9.32659C13.1652 9.19247 13.3548 9.12541 13.5737 9.12541C13.9238 9.12541 14.2813 9.30221 14.6461 9.6558L16.5063 11.6311C16.6231 11.7896 16.7471 11.8688 16.8784 11.8688H20.4895C20.9272 11.8688 21.1461 11.7774 21.1461 11.5945C21.1461 11.5335 21.1242 11.4725 21.0804 11.4116L17.907 8.1012C17.659 7.84515 17.535 7.57081 17.535 7.27818C17.535 6.98555 17.6517 6.70511 17.8851 6.43686C18.0748 6.19301 18.4432 5.78759 18.9903 5.22062C19.5375 4.65365 20.0153 4.12326 20.4238 3.62944C20.8324 3.13563 21.1023 2.68754 21.2336 2.28517L21.2993 2.04741C21.2847 2.02302 21.2774 1.9834 21.2774 1.92853C21.2774 1.87366 21.2701 1.82794 21.2555 1.79136H17.8195C17.6006 1.86451 17.4255 1.97425 17.2942 2.12057L17.1629 2.46806C16.7981 3.30938 15.8425 4.60792 14.2959 6.36371C13.9895 6.60757 13.632 6.7295 13.2235 6.7295Z"
-      fill="#666666" />
+    <symbol id="vk-icon" viewBox="0 0 23 13">
+      <path
+        d="M0.0703125 1.99254C0.0703125 1.3707 0.493433 1.0354 1.33967 0.986623L4.60062 1.00491C4.81947 1.00491 4.96537 1.09636 5.03833 1.27925C5.3739 2.19372 5.74961 2.98322 6.16543 3.64773C6.58126 4.31225 7.12475 5.07735 7.7959 5.94305C7.85426 6.05279 7.9491 6.10766 8.08041 6.10766C8.18255 6.10766 8.26279 6.06498 8.32115 5.97963L8.38681 5.77845L8.4087 2.61438C8.4087 2.39491 8.34669 2.24859 8.22267 2.17543C8.09865 2.10228 7.86885 2.04741 7.53328 2.01083C7.27065 1.97425 7.13934 1.84013 7.13934 1.60846C7.13934 1.55969 7.14663 1.52311 7.16122 1.49873C7.46762 0.706186 8.34304 0.309915 9.78749 0.309915L11.0131 0.291626C11.5675 0.291626 12.0271 0.407459 12.3919 0.639125C12.7566 0.87079 12.939 1.23658 12.939 1.73649V5.88818C13.0411 5.94915 13.136 5.97963 13.2235 5.97963C13.4424 5.97963 13.632 5.86989 13.7925 5.65042C15.3975 3.77271 16.2656 2.51684 16.3969 1.8828C16.3969 1.87061 16.4115 1.84013 16.4407 1.79136C16.5428 1.60846 16.7106 1.44995 16.9441 1.31583C17.1775 1.18171 17.3818 1.09026 17.5568 1.04149C17.6152 1.01711 17.6809 1.00491 17.7538 1.00491H21.1461L21.3649 1.0232C21.6567 1.0232 21.8829 1.13903 22.0434 1.3707C22.1017 1.44386 22.1419 1.52311 22.1637 1.60846C22.1856 1.69381 22.2002 1.77916 22.2075 1.86451C22.2148 1.94987 22.2185 1.99864 22.2185 2.01083V2.13886C22.1163 2.63877 21.8574 3.17221 21.4415 3.73918C21.0257 4.30615 20.4968 4.91884 19.8548 5.57726C19.2129 6.23568 18.8116 6.66853 18.6511 6.87581C18.5198 7.02213 18.4542 7.15625 18.4542 7.27818C18.4542 7.37572 18.5125 7.48546 18.6292 7.60739L21.8245 10.9726C21.9996 11.1677 22.0871 11.3811 22.0871 11.6128C22.0871 11.8932 21.9558 12.1249 21.6932 12.3078C21.4306 12.4907 21.1169 12.5943 20.7521 12.6187L20.3801 12.637H17.0535C17.0389 12.637 17.0097 12.64 16.9659 12.6461C16.9222 12.6522 16.893 12.6553 16.8784 12.6553C16.5574 12.6553 16.2583 12.5394 15.9811 12.3078C15.879 12.2102 15.1932 11.4908 13.9238 10.1496C13.8509 10.0643 13.7488 9.98501 13.6175 9.91185C13.5591 10.1069 13.4825 10.3874 13.3877 10.7532C13.2928 11.119 13.2235 11.3811 13.1797 11.5396L13.1141 11.8505C12.9682 12.2773 12.6618 12.5333 12.1949 12.6187L11.8885 12.637H9.74371C8.53271 12.637 7.32536 12.1736 6.12166 11.247C4.91796 10.3203 3.83462 9.12236 2.87166 7.65311C1.9087 6.18386 1.01139 4.4738 0.17974 2.52293C0.106788 2.36442 0.0703125 2.18763 0.0703125 1.99254ZM13.2235 6.7295C12.9171 6.7295 12.6399 6.65939 12.3919 6.51917C12.1438 6.37895 12.0198 6.18691 12.0198 5.94305V1.73649C12.0198 1.49263 11.9469 1.31888 11.801 1.21524C11.655 1.1116 11.3997 1.05978 11.035 1.05978L9.78749 1.09636C9.1601 1.09636 8.68591 1.18781 8.36493 1.3707C9.0069 1.62675 9.32789 2.04131 9.32789 2.61438V5.83331C9.29871 6.13814 9.1528 6.39114 8.89018 6.59233C8.62755 6.79351 8.33574 6.8941 8.01476 6.8941C7.57705 6.8941 7.24147 6.7173 7.00802 6.36371C5.86998 4.92494 5.02374 3.55933 4.4693 2.26688L4.27233 1.79136L1.36156 1.77307C1.17188 1.77307 1.0661 1.78221 1.04422 1.8005C1.02233 1.81879 1.01139 1.87061 1.01139 1.95596C1.01139 2.0657 1.02598 2.18153 1.05516 2.30346L1.51476 3.32767C2.74035 5.97353 4.07172 8.05853 5.50886 9.58264C6.94601 11.1068 8.35763 11.8688 9.74371 11.8688H11.9323C12.0198 11.8688 12.0855 11.8475 12.1292 11.8048C12.173 11.7621 12.2095 11.6798 12.2387 11.5579L12.2824 11.375L12.6983 9.76554C12.815 9.54606 12.9171 9.39975 13.0047 9.32659C13.1652 9.19247 13.3548 9.12541 13.5737 9.12541C13.9238 9.12541 14.2813 9.30221 14.6461 9.6558L16.5063 11.6311C16.6231 11.7896 16.7471 11.8688 16.8784 11.8688H20.4895C20.9272 11.8688 21.1461 11.7774 21.1461 11.5945C21.1461 11.5335 21.1242 11.4725 21.0804 11.4116L17.907 8.1012C17.659 7.84515 17.535 7.57081 17.535 7.27818C17.535 6.98555 17.6517 6.70511 17.8851 6.43686C18.0748 6.19301 18.4432 5.78759 18.9903 5.22062C19.5375 4.65365 20.0153 4.12326 20.4238 3.62944C20.8324 3.13563 21.1023 2.68754 21.2336 2.28517L21.2993 2.04741C21.2847 2.02302 21.2774 1.9834 21.2774 1.92853C21.2774 1.87366 21.2701 1.82794 21.2555 1.79136H17.8195C17.6006 1.86451 17.4255 1.97425 17.2942 2.12057L17.1629 2.46806C16.7981 3.30938 15.8425 4.60792 14.2959 6.36371C13.9895 6.60757 13.632 6.7295 13.2235 6.7295Z"
+        fill="#666666" />
     </symbol>
 
     <symbol id="instagram-icon" viewBox="0 0 16 16">
@@ -59,7 +62,7 @@
     <div class="page-header__container wrapper">
       <a class="page-header__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1300px)" srcset="img/svg/desktop-logo.svg">
+          <source media="(min-width: 1440px)" srcset="img/svg/desktop-logo.svg">
           <source media="(min-width: 768px)" srcset="img/svg/tablet-logo.svg">
           <img src="./img/svg/mobile-logo.svg" alt="Логотип" width="191" height="38">
         </picture>
@@ -97,10 +100,27 @@
         <h1 class="page-title">Подбор программы</h1>
         <p class="program-form__text">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
-          <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__cat-info-container">
-          <section class="form__cat-info">
-            <h4 class="visually-hidden">Данные кота</h4>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-wrapper">
+
+            <div class="form-cat__container">
+              <fieldset class="cat-info-list">
+                <div class="cat-info cat-info__item">
+                  <label for="name" class="cat-info__label">Имя:<sup>*</sup></label>
+                  <input type="text" id="name" name="cat-info" class="cat-info__input" value="Барсик" required>
+                </div>
+                <div class="cat-info cat-info__item">
+                  <label for="weight" class="cat-info__label">Вес(кг):<sup>*</sup></label>
+                  <input type="text" id="weight" name="cat-info" class="cat-info__input" value="7">
+                </div>
+                <div class="cat-info cat-info__item">
+                  <label for="age" class="cat-info__label">Возраст(лет):</label>
+                  <input type="text" id="age" name="cat-info" class="cat-info__input" value="7">
+                </div>
+              </fieldset>
+            </div>
+
+            <!--
               <ul class="cat-info-list">
                 <li class="cat-info cat-info__item">
                   <label for="name" class="cat-info__label">Имя:<sup>*</sup></label>
@@ -115,9 +135,26 @@
                   <input type="text" id="age" name="cat-info" class="cat-info__input" value="7">
                 </li>
               </ul>
-            </section>
-            <section class="form__target">
-              <h4 class="visually-hidden">Желаемый результат</h4>
+            -->
+            <div class="form__target">
+              <fieldset class="target-list">
+                <div class="radio target-list__item">
+                  <input id="fitness" type="radio" name="target" class="radio__input visually-hidden">
+                  <label for="fitness" class="radio__label">Похудение</label>
+                </div>
+                <div class="radio target-list__item">
+                  <input id="fatness" type="radio" name="target" class="radio__input visually-hidden">
+                  <label for="fatness" class="radio__label">Набор массы</label>
+                </div>
+                <div class="radio target-list__item">
+                  <input id="unknown" type="radio" name="target" class="radio__input visually-hidden">
+                  <label for="unknown" class="radio__label">Не знаю (Нужен ваш совет)</label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <!--
               <ul class="target-list">
                 <li class="radio target-list__item">
                   <input id="fitness" type="radio" name="target" class="radio__input visually-hidden">
@@ -132,32 +169,66 @@
                   <label for="unknown" class="radio__label">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
-            </section>
-          </div>
+            -->
+
+          <fieldset class="complex-owner__info">
+            <legend class="complex-title">
+              <span class="complex-title__text">Контактные данные (владельца кота)</span>
+            </legend>
+            <div class="complex-wrap">
+              <div class="complex-item">
+                <label for="email" class="complex-owner__label">e-mail:<sup>*</sup></label>
+                <input type="email" id="email" class="complex-owner__input" name="email" value="kuklachev@gmail.com"
+                  required>
+                <svg width="18" height="13" class="complex-img">
+                  <use xlink:href="#email-icon"></use>
+                </svg>
+              </div>
+
+              <div class="complex-item">
+                <label for="phone" class="complex-owner__label">Телефон:<sup>*</sup></label>
+                <input type="tel" id="phone" class="complex-owner__input" name="phone" value="8 (960) 900-60-90"
+                  required>
+                <svg width="20" height="21" class="complex-img">
+                  <use xlink:href="#phone-icon"></use>
+                </svg>
+              </div>
+            </div>
+          </fieldset>
+
+          <!--
           <h3 class="complex-title">
             <span class="complex-title__text">Контактные данные (владельца кота)</span>
           </h3>
-          <section class="complex__owner-info">
+          <section class="complex-owner__info">
             <h4 class="visually-hidden">Данные владельца кота</h4>
             <div class="complex-wrap">
               <div class="complex-item">
-                <label for="email" class="complex__label">E-mail:<sup>*</sup></label>
-                  <input type="email" id="email" class="complex__input" name="email" value="kuklachev@gmail.com" required>
+                <label for="email" class="complex-owner__label">E-mail:<sup>*</sup></label>
+                  <input type="email" id="email" class="complex-owner__input" name="email" value="kuklachev@gmail.com" required>
                   <svg width="18" height="13" class="complex-img">
                     <use xlink:href="#email-icon"></use>
                   </svg>
               </div>
 
               <div class="complex-item">
-                <label for="phone" class="complex__label">Телефон:<sup>*</sup></label>
-                <input type="tel" id="phone" class="complex__input" name="phone" value="8 (960) 900-60-90" required>
+                <label for="phone" class="complex-owner__label">Телефон:<sup>*</sup></label>
+                <input type="tel" id="phone" class="complex-owner__input" name="phone" value="8 (960) 900-60-90" required>
                 <svg width="20" height="21" class="complex-img">
                   <use xlink:href="#phone-icon"></use>
                 </svg>
               </div>
             </div>
           </section>
-          <h3 class="complex-title"><span class="complex-title__text">Комментарий</span></h3>
+          -->
+          <fieldset class="complex-comment">
+            <legend class="complex-title"><span class="complex-title__text">Комментарий</span></legend>
+            <textarea class="comment-field" name="comment-field"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+
+          <!--
+          <h3 class="complex-title complex-comment"><span class="complex-title__text">Комментарий</span></h3>
           <section class="form__comments">
             <h4 class="visually-hidden">Комментарии</h4>
             <div>
@@ -165,6 +236,33 @@
                 placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </section>
+          -->
+
+          <fieldset class="additional__form">
+            <legend class="complex-title"><span class="complex-title__text">Дополнительно</span></legend>
+            <div class="additional">
+              <div class="additional__list">
+                <div class="additional__item">
+                  <input class="additional__checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
+                  <label for="sweetener" class="additional__label">Сахарозаменитель</label>
+                </div>
+                <div class="additional__item">
+                  <input class="additional__checkbox" type="checkbox" id="water" name="water">
+                  <label for="water" class="additional__label">Питьевая вода</label>
+                </div>
+                <div class="additional__item">
+                  <input class="additional__checkbox" type="checkbox" id="milk" name="milk">
+                  <label for="milk" class="additional__label">Молоко</label>
+                </div>
+                <div class="additional__item">
+                  <input class="additional__checkbox" type="checkbox" id="vitamins" name="vitamins">
+                  <label for="vitamins" class="additional__label">Витамины</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!--
           <h3 class="complex-title"><span class="complex-title__text">Дополнительно</span></h3>
           <section class="form__additional">
             <h4 class="visually-hidden">Дополнительно</h4>
@@ -189,6 +287,7 @@
             </ul>
             </div>
           </section>
+          -->
           <section class="form__submit">
             <div class="form-submit">
               <h4 class="visually-hidden">Отправить форму</h4>
@@ -196,72 +295,71 @@
               <small class="form-small">* — Обязательные поля</small>
             </div>
           </section>
-      </form>
+        </form>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__map-container">
-    <section class="partnership">
-      <div class="partnership__wrapper">
-        <h2 class="partnership__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-        <p class="partnership__text">
-        <span>ул. Большая Конюшенная, д. 19/8</span>
-        <span>Санкт-Петербург</span>
-      </p>
-      </div>
-    </section>
-    <section class="page-footer__map map">
-      <h2 class="visually-hidden">Карта</h2>
-      <iframe class="map__live"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3014077678257!2d30.32213544769371!3d59.93873260493617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627152171667!5m2!1sru!2sru"
-      width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
+      <section class="partnership">
+        <div class="partnership__wrapper">
+          <h2 class="partnership__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+          <p class="partnership__text">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </p>
+        </div>
+      </section>
+      <section class="page-footer__map map">
+        <h2 class="visually-hidden">Карта</h2>
+        <iframe class="map__live"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3014077678257!2d30.32213544769371!3d59.93873260493617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627152171667!5m2!1sru!2sru"
+          width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
     </div>
     <div class="page-footer__wrapper">
       <a href="index.html" class="page-footer__block">
-      <img class="page-footer__logo" src="img/svg/footer-logo.svg" width="128" height="24" alt="Cat Energy">
+        <img class="page-footer__logo" src="img/svg/footer-logo.svg" width="128" height="24" alt="Cat Energy">
       </a>
       <div class="page-footer__social social">
-        <h3 class="visually-hidden">Ссылки социальных сетей</h3>
-      <div class="social__list-container">
-      <ul class="social__list">
-        <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://vk.com" aria-label="Мы во Вконтакте"
-          target="_blank">
-          <svg class="social__icon" width="23" height="13">
-            <use xlink:href="./img/sprite.svg#vk-icon"></use>
-          </svg>
-        </a>
-        </li>
-        <li class="social__item">
-        <a class="social__link social__link--instagram" href="https://www.instagram.com" aria-label="Мы в Инстаграм"
-          target="_blank">
-          <svg class="social__icon" width="16" height="16">
-            <use xlink:href="./img/sprite.svg#instagram-icon"></use>
-          </svg>
-        </a>
-        </li>
-        <li class="social__item">
-        <a class="social__link social__link--facebook" href="https://www.facebook.com" aria-label="Мы в Фейсбуке"
-          target="_blank">
-          <svg class="social__icon" width="13" height="20">
-            <use xlink:href="./img/sprite.svg#fb-icon"></use>
-          </svg>
-        </a>
-        </li>
-      </ul>
-      </div>
+        <div class="social__list-container">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com" aria-label="Мы во Вконтакте"
+                target="_blank">
+                <svg class="social__icon" width="23" height="13">
+                  <use xlink:href="./img/sprite.svg#vk-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com"
+                aria-label="Мы в Инстаграм" target="_blank">
+                <svg class="social__icon" width="16" height="16">
+                  <use xlink:href="./img/sprite.svg#instagram-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com" aria-label="Мы в Фейсбуке"
+                target="_blank">
+                <svg class="social__icon" width="13" height="20">
+                  <use xlink:href="./img/sprite.svg#fb-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy.ru"
-        target="_blank">
-        <span class="copyright__text">HTML Academy</span>
-      <svg class="copyright__logo" role="img" width="27" height="34">
-        <use xlink:href="./img/sprite.svg#html-academy-logo"></use>
-      </svg>
-      </a>
-    </div>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy.ru"
+          target="_blank">
+          <span class="copyright__text">HTML Academy</span>
+          <svg class="copyright__logo" role="img" width="27" height="34">
+            <use xlink:href="./img/sprite.svg#html-academy-logo"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
   <script src="/js/main.js"></script>

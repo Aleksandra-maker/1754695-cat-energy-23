@@ -7,13 +7,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 17px 0;
   text-decoration: none;
 }
 
 .copyright__text {
   vertical-align: middle;
-  padding-top: 14px;
+  padding-top: 13px;
   padding-right: 3px;
   padding-bottom: 20px;
   font-size: 16px;
@@ -62,5 +62,17 @@
 
   .copyright__link{
     padding: 0;
+  }
+}
+
+//Desktop
+
+@media (min-width: @desktop-width) {
+  .copyright__logo {
+    padding-top: 20px;
+  }
+
+  .copyright__text {
+    margin-top: 17px;
   }
 }

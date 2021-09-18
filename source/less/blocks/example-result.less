@@ -19,11 +19,11 @@
 .example-result__item {
   font-size: 12px;
   line-height: 12px;
-  font-family: "ArialTM", sans-serif;
-  color: #444444;
+  font-family: "Arial";
+  color: @color-gray_light;
   width: 77px;
   text-align: center;
-  background-color: #EAEAEA;
+  background-color: @extra-grey;
   margin: -8px auto;
   padding: 0 7px;
 }
@@ -34,7 +34,7 @@
   text-transform: uppercase;
   margin: 0;
   padding: 13px 4px 17px 4px;
-  border: 1px solid #dcdcdc;
+  border: 1px solid @slider-grey;
 }
 
   @media (min-width: @tablet-width) {
@@ -55,7 +55,7 @@
       line-height: 14px;
       width: auto;
       max-width: 77%;
-      background-color: #ffffff;
+      background-color: @bg-color;
       padding: 0 7px;
     }
 
@@ -83,4 +83,4 @@
       background-color: @block-bg_color;
       max-width: 80%;
     }
-}
+  }

@@ -1,11 +1,10 @@
 .comment-field {
   width: 280px;
-  height: 150px;
+  height: 145px;
   overflow: auto;
   resize: none;
   border: 1px solid @grey-input;
-  margin-top: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 7px;
     &::-webkit-input-placeholder { color: @color-gray_light; }
     &::-moz-placeholder { color: @color-gray_light; }
     &:-ms-input-placeholder { color: @color-gray_light; }
@@ -16,7 +15,7 @@
       font-weight: 400;
       color: @color-gray_light;
       text-align: center;
-      padding: 9px 12px 0 15px;
+      padding: 5px 12px 0 15px;
   }
 }
 
@@ -25,8 +24,26 @@
 @media (min-width: @tablet-width) {
   .comment-field {
     width: 100%;
+    height: 174px;
+    padding-top: 10px;
+    padding-left: 59px;
+    font-size: 20px;
+    line-height: 20px;
     &::placeholder {
       text-align: left;
+      font-size: 20px;
+      line-height: 30px;
     }
+  }
+}
+
+//Desktop
+
+@media (min-width: @desktop-width) {
+  .comment-field {
+    height: 167px;
+    padding-top: 29px;
+    padding-left: 3px;
+    margin-left: 97px;
   }
 }

@@ -1,14 +1,16 @@
 .target-list {
-  list-style: none;
   margin: 0;
-  padding: 20px 20px;
+  border: none;
+  padding: 13px 20px;
   border-top: 1px solid @grey-border;
   border-bottom: 1px solid @grey-border;
 }
 
 .target-list__item {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
+
+//Tablet
 
 @media (min-width: @tablet-width) {
   .target-list__item {
@@ -18,9 +20,24 @@
   .target-list {
     border-top: none;
     border-bottom: none;
+    width: auto;
     border: 1px solid @grey-input;
-    padding: 25px;
-    padding-bottom: 29px;
+    padding: 7px;
+    padding-bottom: 10px;
     padding-left: 28px;
+    margin: 70px;
+  }
+}
+
+//Desktop
+
+@media (min-width: @desktop-width) {
+  .target-list {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .target-list__item {
+    margin-bottom: 9px;
   }
 }

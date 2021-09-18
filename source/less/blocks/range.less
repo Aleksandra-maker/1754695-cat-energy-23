@@ -11,8 +11,8 @@
 
 .range__scale {
   height: 14px;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
+  background-color: @bg-color;
+  border: 1px solid @border-bottom_grey;
   border-radius: 6px;
   width: 81px;
   margin: 0 auto;
@@ -22,7 +22,7 @@
 .range__handle {
   height: 6px;
   width: 36px;
-  background-color: #68b738;
+  background-color: @basic-green;
   border-radius: 3px;
   position: absolute;
   top: 5px;
@@ -66,13 +66,13 @@
     position: absolute;
   }
 
-  .about__filter-range {
+  .range-filter__wrapper {
     position: relative;
   }
 
   .range__scale {
     height: 7px;
-    background-color: #dcdcdc;
+    background-color: @slider-grey;
     border-radius: 6px;
     width: 420px;
     display: block;
@@ -139,11 +139,11 @@
     height: 8px;
     box-sizing: content-box;
     padding: 0;
-    border: 13px solid #ffffff;
+    border: 13px solid @bg-color;
     border-radius: 50%;
-    background-color: #68b738;
+    background-color: @basic-green;
     cursor: pointer;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 0 0 2px #68b738;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 0 0 2px @basic-green;
     margin-left: -11px;
     transition: all 2s;
   }
@@ -189,7 +189,7 @@
 
     &::after {
       content: "";
-      border-bottom: 1px solid #dcdcdc;
+      border-bottom: 1px solid @slider-grey;
       z-index: 2;
     }
   }

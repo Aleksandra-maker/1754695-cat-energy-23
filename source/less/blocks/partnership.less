@@ -2,8 +2,9 @@
   background-color: @bg-color;
   padding-left: 20px;
   padding-right: 20px;
+}
 
-  &__wrapper {
+  .partnership__wrapper{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -11,7 +12,7 @@
     padding-bottom: 24px;
   }
 
-  &__title {
+  .partnership__title {
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -22,9 +23,10 @@
     text-transform: uppercase;
     font-weight: 400;
     text-align: left;
+    padding-top: 10px;
   }
 
-  &__text {
+  .partnership__text {
     display: inline-block;
     flex-direction: column;
     flex-wrap: wrap;
@@ -37,30 +39,32 @@
     vertical-align: top;
     font-family: "Arial";
     text-align: left;
+    padding-top: 10px;
   }
-}
 
 //Tablet
 
 @media (min-width: @tablet-width) {
   .partnership {
     padding: 0 72px;
-    background-color: #f2f2f2;
-    &__wrapper {
+    background-color: @block-bg_color;
+  }
+
+    .partnership__wrapper {
       justify-content: space-between;
       padding-top: 71px;
       padding-bottom: 62px;
     }
 
-    &__title {
+    .partnership__title {
       font-size: 20px;
       line-height: 25px;
       width: 160px;
-      padding-top: 2px;
+      padding-top: 35px;
       padding-bottom: 2px;
     }
 
-    &__text {
+    .partnership__text {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -68,12 +72,8 @@
       justify-content: space-between;
       text-align: right;
       width: 160px;
+      padding-top: 33px;
     }
-  }
-  .page-body--index .partnership{
-    background-color: #ffffff;
-  }
-
 }
 
 //Desktop
@@ -87,22 +87,27 @@
     z-index: 2;
     left: 50%;
     margin-left: -610px;
-    background: #ffffff;
+    background: @bg-color;
     padding: 62px 84px 57px 76px;
     box-sizing: border-box;
 
-    &__wrapper {
+    .partnership__wrapper {
       margin: 0;
       padding: 0;
     }
 
-    &__title {
+    .partnership__title {
       margin: 0;
+      padding-top: 26px;
     }
 
-    &__text {
+    .partnership__text {
       margin: 0;
       text-align: left;
+    }
+
+    .partnership__text {
+      padding-top: 25px;
     }
   }
 }
