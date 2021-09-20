@@ -1,13 +1,12 @@
 .complex-owner__wrap {
-  margin-top: 35px;
-  margin: 0 20px;
+  margin: 35px 19px 0;
 }
 
 .complex-owner__item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 19px;
+  margin-bottom: 13px;
   position: relative;
 }
 
@@ -18,6 +17,8 @@
 
 .complex-owner {
   border: none;
+  padding: 0;
+  margin: 0 0 11px 0;
 }
 
 .complex-owner__label {
@@ -26,6 +27,7 @@
   font-size: 16px;
   line-height: 18px;
   margin-right: 11px;
+  white-space: nowrap;
 }
 
 .complex-owner__input {
@@ -74,29 +76,32 @@
     padding: 0;
   }
 
+  .complex-owner__wrap {
+    margin: 76px 65px 0;
+  }
+
   .complex-owner__label {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 46px;
-    margin-top: -18px;
+    margin-left: 6px;
+    margin-top: -8px;
+    white-space: nowrap;
+    margin-right: 21px;
   }
 
   .complex-owner__input {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 78px;
+    padding-left: 19px;
+    padding-top: 8px;
+  }
+
+  .complex-owner__item {
+    margin-bottom: 19px;
   }
 
   .complex-comment {
     margin-bottom: 10px;
-  }
-
-  .complex-title {
-    margin-bottom: 20px;
-  }
-
-  .complex-title__text {
-    margin-bottom: 61px;
   }
 }
 
@@ -107,9 +112,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 78px;
+    width: 1220px;
+    margin: 76px auto -1px;
   }
 
   .complex-comment {
-    margin-bottom: 47px;
+    margin: 0;
+    padding: 0;
   }
+
 }

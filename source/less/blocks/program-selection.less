@@ -11,7 +11,7 @@
 .program-selection__item {
   position: relative;
   background-color: @block-bg_color;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding: 30px 20px 20px 20px;
     &:last-child {
       margin-bottom: 0;
@@ -102,31 +102,32 @@
 }
 
 .program-selection__link {
-  display: block;
-  position: relative;
   text-decoration: none;
+  color: #000;
+  position: relative;
   font-size: 16px;
   line-height: 16px;
-  font-weight: 400;
   text-transform: uppercase;
-  color: @color-black_dark;
-  text-align: left;
+  padding-top: 20px;
+  padding-right: 39px;
     &::after {
       content: "";
+      display: block;
       position: absolute;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      top: 0;
-      margin-left: 15px;
+      background-image: url(../img/svg/icon_arrow.svg);
       width: 24px;
-      height: 12px;
-      background-image: url("../img/svg/arrow.svg");
+      height: 10px;
+      top: 24px;
+      right: 0;
+      background-position: right center;
     }
 
-    &:hover {
-      width: 32px;
-      background-image: url("../img/svg/arrow-hover.svg");
-      transition: 0.3s;
+    &:hover{
+      padding-right: 48px;
+    }
+
+    &:hover::after {
+      width: 33px;
     }
 
     &:active {
@@ -245,7 +246,7 @@
 //Desktop
 
 @media (min-width: @desktop-width) {
-  .program-selection{
+  .program-selection {
     padding-top: 81px;
   }
 
@@ -309,5 +310,9 @@
 
   .program-selection__description {
     margin-bottom: 40px;
+  }
+
+  .program-selection__link::after {
+    top: 24px;
   }
 }

@@ -1,7 +1,7 @@
 .cat-info {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 .cat-info__label {
@@ -10,7 +10,8 @@
   font-size: 16px;
   line-height: 18px;
   margin-right: 15px;
-  margin-left: 20px;
+  margin-left: 0;
+  white-space: nowrap;
 }
 
 .cat-info__input {
@@ -21,8 +22,8 @@
   line-height: 18px;
   border: 1px solid @grey-input;
   padding-top: 13px;
-  padding-bottom: 15px;
-  padding-left: 14px;
+  padding-bottom: 13px;
+  padding-left: 15px;
   &:hover {
     border: 1px solid @border-bottom_grey;
   }
@@ -47,7 +48,7 @@
   .cat-info__label {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 71px;
+    margin-left: 0;
     margin-right: 17px;
   }
 
@@ -67,5 +68,10 @@
     padding-top: 10px;
     padding-bottom: 12px;
     padding-left: 19px;
+  }
+
+  .cat-info__label {
+    margin: 0 21px 0 0;
+    white-space: nowrap;
   }
 }

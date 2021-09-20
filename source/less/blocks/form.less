@@ -7,22 +7,29 @@
   padding: 0 20px;
 }
 
-//Desktop
+@media (min-width: @tablet-width) {
+  .form__target {
+    margin-bottom: 76px;
+  }
+}
 
 @media (min-width: @desktop-width) {
-  .form-wrapper {
+  .form__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 34px;
+    width: 1220px;
+    margin: 0 auto -5px;
   }
 
   .form-cat__container {
-    width: 45%;
+    width: 570px;
   }
 
   .form__target {
-    width: 45%;
+    width: 570px;
+    border: 1px solid #e7e7e7;
   }
 }

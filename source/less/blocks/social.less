@@ -2,7 +2,7 @@
   border-bottom: 1px solid @border-bottom_grey;
   border-top: 1px solid @border-bottom_grey;
   margin: 0 20px;
-  padding-top: 22px;
+  padding-top: 18px;
   padding-bottom: 18px;
 }
 
@@ -35,9 +35,11 @@
 .social__icon {
   max-width: 100%;
   fill: @main-menu_hover;
+
   &:hover {
     fill: @basic-green;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -46,6 +48,11 @@
 .social__icon--facebook {
   fill: none;
   stroke: @main-menu_hover;
+}
+
+.social__icon--facebook:hover {
+  fill: none;
+  stroke:  @basic-green;
 }
 
 //Tablet
@@ -57,29 +64,30 @@
     margin: 0;
     padding: 0;
     align-items: center;
-      &__link {
-        width: 30px;
-        height: 30px;
+  }
 
-        &--vkontakte {
-          width: 30px;
-          height: 16px;
-        }
+  .social__link {
+    width: 30px;
+    height: 30px;
+  }
 
-        &--instagram {
-          width: 23px;
-          height: 23px;
-        }
+  .social__link--vkontakte {
+    width: 30px;
+    height: 16px;
+  }
 
-        &--facebook {
-          width: 14px;
-          height: 28px;
-        }
-      }
+  .social__link--instagram {
+    width: 23px;
+    height: 23px;
+  }
 
-      &:last-child {
-        margin-right: 0;
-      }
+  .social__link--facebook {
+    width: 14px;
+    height: 28px;
+  }
+     
+  .social__link:last-child {
+    margin-right: 0;
   }
 
   .social__list {
@@ -105,6 +113,6 @@
 
 @media (min-width: @desktop-width) {
   .social__list {
-  margin-top: 12px;
+    margin-top: 12px;
   }
 }

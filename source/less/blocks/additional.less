@@ -1,5 +1,11 @@
 .additional {
-  border: none;
+  border: 0;
+  padding: 0;
+  margin: 13px 0 19px;
+}
+
+.additional__form{
+  margin: 36px 14px 0px;
 }
 
 .additional__list {
@@ -12,7 +18,7 @@
 }
 
 .additional__item {
-  margin-bottom: 14px;
+  margin-bottom: 19px;
 }
 
 .additional__label {
@@ -21,6 +27,11 @@
   line-height: 18px;
   font-weight: 400;
   cursor: pointer;
+  position: relative;
+  padding-left: 46px;
+  padding-top: 5px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .additional__checkbox {
@@ -35,11 +46,14 @@
   vertical-align: middle;
   width: 28px;
   height: 28px;
-  border: 1px solid @border-bottom_grey;
+  border: 1px solid #cdcdcd;
   background-repeat: no-repeat;
-  background-position:center center;
+  background-position: center center;
   background-size: 50% 50%;
   margin-right: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .additional__checkbox:checked+.additional__label::before {
@@ -60,25 +74,31 @@
   .additional__label {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 42px;
+    padding-left: 58px;
+  }
+
+  .additional__form {
+    margin: 36px 57px 0;
   }
 
   .additional__checkbox+.additional__label::before {
-    top: -9px;
+    top: 0;
     width: 38px;
     height: 38px;
   }
 
   .additional__checkbox:checked+.additional__label::before {
     background-image: url("../img/svg/checked-big.svg");
-    top: 50%;
-    left: 15px;
+    top: 0;
+    left: 0;
   }
 
   .additional__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
+    grid-column-gap: 43px;
+    grid-row-gap: 6px;
   }
 
   .additional__item {
@@ -93,24 +113,31 @@
 @media (min-width: @desktop-width) {
 
   .additional {
-    margin-bottom: 30px;
+    margin-bottom: 39px;
   }
 
   .additional__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-right: 131px;
+    grid-column-gap: 78px;
+    margin-right: 0;
   }
 
   .additional__item {
-    margin-bottom: -9px;
-    margin-left: 48px;
-    margin-top: -29px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
   }
 
   .additional__checkbox {
     &::before {
       margin-right: 20px;
     }
+  }
+
+  .additional__form{
+    width: 1220px;
+    margin: 56px auto 0;
   }
 }

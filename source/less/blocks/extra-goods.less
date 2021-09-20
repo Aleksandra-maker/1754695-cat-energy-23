@@ -119,11 +119,6 @@ margin-bottom: 35px;
     }
   }
 
-  .complex-title__text {
-    padding-left: 41px;
-    padding-right: 42px;
-  }
-
   .extra-goods__list {
     border: 1px solid @border-bottom_grey;
     margin: 0 0 68px;
@@ -162,6 +157,7 @@ margin-bottom: 35px;
 @media (min-width: @desktop-width) {
   .extra-goods{
     margin-bottom: 87px;
+    overflow: hidden;
   }
 
   .extra-goods__wrapper {
@@ -190,7 +186,8 @@ margin-bottom: 35px;
   }
 
   .extra-goods__name {
-    margin-right: 50px;
+    margin-right: 24px;
+    width: 268px;
   }
 
   .extra-goods__text {
@@ -204,11 +201,15 @@ margin-bottom: 35px;
 
   .extra-goods__desc {
     margin: 0;
-    width: 304px;
+    width: 294px;
+    align-items: center;
+    justify-content: flex-start;
   }
+
   .extra-goods__quantity {
     margin-left: 0;
     font-size: 16px;
+    width: 243px;
     line-height: 20px;
 }
 
