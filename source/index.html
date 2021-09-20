@@ -7,6 +7,8 @@
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
   <title>HTML Academy: Кэт энерджи-главная страница</title>
   <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="./css/style.css">
@@ -15,7 +17,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon16.png">
 </head>
 
-<body class="page-body page-body__index">
+<body class="page-body page-body--index">
   <header class="page-header page-body__header page-header--wrap">
     <div class="page-header__container">
       <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
@@ -149,11 +151,11 @@
             <div class="about-slider__screen-container about-slider__screen-container--two">
               <div class="about-slider__screen--two about-slider__screen"></div>
             </div>
-            <div class="range range-filter__wrapper">
-              <a href="#" for="was" class="range__before" aria-label="Показать состояние до правильного питания">Было</a>
+            <div class="range">
+              <a href="#" class="range__before" aria-label="Показать состояние до правильного питания">Было</a>
               <div class="range__scale"></div>
               <div class="range__handle"></div>
-              <a href="#" for="will" class="range__after range__switch" aria-label="Показать состояние после правильного питания">Стало</a>
+              <a href="#" class="range__after range__switch" aria-label="Показать состояние после правильного питания">Стало</a>
             </div>
           </div>
         </div>
@@ -204,7 +206,7 @@
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com" aria-label="Мы в Фейсбуке"
               target="_blank">
-              <svg class="social__icon" width="13" height="20">
+              <svg class="social__icon social__icon--facebook" width="13" height="20">
                 <use xlink:href="./img/sprite.svg#fb-icon"></use>
               </svg>
             </a>

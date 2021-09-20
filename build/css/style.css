@@ -339,12 +339,6 @@ template {
   background-color: #5EAA2F;
   color: #8EC36D;
 }
-.tablet {
-  display: none;
-}
-@media (min-width: 768px) {
-  display: block;
-}
 .wrapper {
   margin: 0 auto;
   padding: 0 20px;
@@ -468,15 +462,15 @@ template {
   color: #000000;
 }
 @media (min-width: 768px) {
-  .page-body__index {
+  .page-body--index {
     background-color: #FFFFFF;
   }
 }
 @media (min-width: 1440px) {
-  .page-body__index {
+  .page-body--index {
     position: relative;
   }
-  .page-body__index::before {
+  .page-body--index::before {
     content: "";
     position: absolute;
     /*bg-green-desktop-menu.jpg*/
@@ -487,10 +481,10 @@ template {
     background: url("../img/bg-green-desktop-menu.jpg") repeat top left;
     display: block;
   }
-  .page-body__index .page-body__site-list-link {
+  .page-body--index .page-body__site-list-link {
     color: #FFFFFF;
   }
-  .page-body__index .page-body__site-list-link::before {
+  .page-body--index .page-body__site-list-link::before {
     background-color: #FFFFFF;
   }
 }
@@ -1346,7 +1340,7 @@ img {
 }
 .advantages__description {
   font-size: 14px;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   line-height: 18px;
   color: #444444;
   width: 200px;
@@ -1493,7 +1487,7 @@ img {
 .live-example__description {
   padding: 0;
   margin: 0 0 25px 0;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
@@ -1600,7 +1594,7 @@ img {
     height: 8px;
     box-sizing: content-box;
     padding: 0;
-    border: 13px solid #ffffff;
+    border: 13px solid #FFFFFF;
     border-radius: 50%;
     background-color: #68B738;
     cursor: pointer;
@@ -1656,7 +1650,6 @@ img {
   .live-example__result-container {
     display: flex;
     flex-direction: column;
-    /* width: 50%;*/
   }
   .live-example__title {
     font-size: 60px;
@@ -1724,7 +1717,7 @@ img {
 .example-result__item {
   font-size: 12px;
   line-height: 12px;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   color: #444444;
   width: 77px;
   text-align: center;
@@ -2686,8 +2679,9 @@ img {
 .social__icon:active {
   opacity: 0.3;
 }
-.wind {
+.social__icon--facebook {
   fill: none;
+  stroke: #666666;
 }
 @media (min-width: 768px) {
   .social {
@@ -2755,7 +2749,7 @@ img {
   background-color: #FFFFFF;
 }
 .product-catalog__heading {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -2780,7 +2774,7 @@ img {
   margin-bottom: 14px;
 }
 .product-catalog__container {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -3062,7 +3056,7 @@ img {
     z-index: 2;
   }
   .catalog-more__description {
-    font-family: "Arial";
+    font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: #444444;
@@ -3125,7 +3119,7 @@ img {
   display: inline-block;
   padding-left: 0;
   padding-right: 24px;
-  background-color: white;
+  background-color: #FFFFFF;
   position: relative;
   z-index: 2;
 }
@@ -3183,7 +3177,7 @@ img {
 .extra-goods__desc {
   padding: 0;
   margin: 0 0 14px 0;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   display: flex;
   justify-content: space-between;
 }
@@ -3675,7 +3669,7 @@ img {
 }
 .gift-text {
   color: #FFFFFF;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   width: 160px;
@@ -3862,30 +3856,19 @@ img {
 .cat-info-list {
   list-style: none;
   padding: 0;
-  margin: 0 20px;
-}
-.cat-info__item {
-  margin-bottom: 14px;
+  margin: 0 20px 9px;
+  border: none;
 }
 @media (min-width: 768px) {
   .cat-info-list {
     margin-bottom: 0;
     padding-bottom: 0;
   }
-  .cat-info__item {
-    margin-bottom: 20px;
-  }
 }
 .cat-info {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
-}
-.cat-info-list {
-  padding: 0;
-  margin: 0;
-  border: none;
-  margin-bottom: 9px;
 }
 .cat-info__label {
   text-transform: uppercase;
@@ -3941,22 +3924,22 @@ img {
     padding-left: 19px;
   }
 }
-.complex-wrap {
+.complex-owner__wrap {
   margin-top: 35px;
   margin: 0 20px;
 }
-.complex-item {
+.complex-owner__item {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 19px;
   position: relative;
 }
-.complex-img {
+.complex-owner__img {
   position: absolute;
   right: 15px;
 }
-.complex-owner__info {
+.complex-owner {
   border: none;
 }
 .complex-owner__label {
@@ -4000,7 +3983,7 @@ img {
   fill: #FF8282;
 }
 @media (min-width: 768px) {
-  .complex-owner__info {
+  .complex-owner {
     padding: 0;
   }
   .complex-owner__label {
@@ -4025,7 +4008,7 @@ img {
   }
 }
 @media (min-width: 1440px) {
-  .complex-wrap {
+  .complex-owner__wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 78px;
@@ -4083,7 +4066,7 @@ img {
     margin-left: 97px;
   }
 }
-.additional__form {
+.additional {
   border: none;
 }
 .additional__list {
@@ -4158,7 +4141,7 @@ img {
   }
 }
 @media (min-width: 1440px) {
-  .additional__form {
+  .additional {
     margin-bottom: 30px;
   }
   .additional__list {
@@ -4181,7 +4164,7 @@ img {
   flex-direction: column;
 }
 .form-small {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-align: center;

@@ -1,9 +1,9 @@
-.complex-wrap {
+.complex-owner__wrap {
   margin-top: 35px;
   margin: 0 20px;
 }
 
-.complex-item {
+.complex-owner__item {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,12 +11,12 @@
   position: relative;
 }
 
-.complex-img {
+.complex-owner__img {
   position: absolute;
   right: 15px;
 }
 
-.complex-owner__info {
+.complex-owner {
   border: none;
 }
 
@@ -70,7 +70,7 @@
 //Tablet
 
 @media (min-width: @tablet-width) {
-  .complex-owner__info {
+  .complex-owner {
     padding: 0;
   }
 
@@ -103,7 +103,7 @@
 //Desktop
 
 @media (min-width: @desktop-width) {
-  .complex-wrap {
+  .complex-owner__wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 78px;

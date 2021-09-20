@@ -19,7 +19,7 @@
 .example-result__item {
   font-size: 12px;
   line-height: 12px;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   color: @color-gray_light;
   width: 77px;
   text-align: center;
@@ -37,11 +37,13 @@
   border: 1px solid @slider-grey;
 }
 
-  @media (min-width: @tablet-width) {
+//Tablet
+
+@media (min-width: @tablet-width) {
     .example-result {
         width: 52%;
         margin-bottom: 93px;
-      }
+    }
 
     .example-result__number {
       font-size: 30px;
@@ -63,6 +65,8 @@
       width: 45%;
     }
   }
+
+//Desktop
 
   @media (min-width: @desktop-width) {
     .example-result {

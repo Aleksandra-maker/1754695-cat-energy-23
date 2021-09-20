@@ -4,13 +4,6 @@
   margin-bottom: 12px;
 }
 
-.cat-info-list {
-  padding: 0;
-  margin: 0;
-  border: none;
-  margin-bottom: 9px;
-}
-
 .cat-info__label {
   text-transform: uppercase;
   color: @color-gray_light;
@@ -44,11 +37,13 @@
   border-color: @error_border;
 }
 
+//Tablet
+
 @media (min-width: @tablet-width) {
   .cat-info {
   margin-bottom: 17px;
   }
-
+ 
   .cat-info__label {
     font-size: 20px;
     line-height: 30px;
@@ -64,6 +59,8 @@
     padding-left: 19px;
   }
 }
+
+//Desktop
 
 @media (min-width: @desktop-width) {
   .cat-info__input {

@@ -5,14 +5,18 @@
   color: @color-black_dark;
 }
 
+//Tablet
+
 @media (min-width: @tablet-width) {
-  .page-body__index {
+  .page-body--index {
     background-color: @bg-color;
   }
 }
 
+//Desktop
+
 @media (min-width: @desktop-width) {
-  .page-body__index{
+  .page-body--index{
     position: relative;
       &::before{
         content: "";
@@ -26,10 +30,10 @@
         display: block;
       }
     }
-    .page-body__index .page-body__site-list-link{
+    .page-body--index .page-body__site-list-link{
       color: @bg-color;
 
-      &::before{
+      &::before {
         background-color: @bg-color;
       }
     }
